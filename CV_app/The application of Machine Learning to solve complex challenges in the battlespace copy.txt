@@ -1,0 +1,3334 @@
+THE APPLICATION OF AUTONOMY AND MACHINE LEARNING TO IMPROVE PLATFORM
+PERFORMANCE.
+
+Major Tom Scott, British Army.
+
+Abstract.
+
+Introduction. 
+
+Manoeuvre warfare, by definition, has sought to avoid strengths and
+exploit weaknesses (Clemons and Santamaria, 2002). As a result, it has
+found itself in a cycle of innovation, each change incurs a reaction,
+which in turn initiates a counteraction (Steven and Watt, 2010). This
+cycle has led to consistent, iterative development in both AFV
+protection and lethality simultaneously. World War Two can provide some
+of the best examples of such development, the Matilda (1941) and the
+Churchill (1944) are both employed in the infantry support roles, yet
+the Churchill increased in weight by 30% (Cowper and Pannell, 2011). As
+manoeuvre warfare has developed, as too have protection and lethality
+requirements, the Churchill weighted 35.3T, a Theatre Entry Standard
+Challenger 2 weighs 74.5T (Jane’s, 2019). Developments in lethality and
+protection are ultimately driven by the requirements for one to defeat
+the other. As such, lethality and protection developments are cyclical
+and directly related, as one increases so too must the other, ultimately
+resulting in a trade-off against weight and mobility (Rahman et al.,
+2017).
+
+One of the key drivers for the 111% increase in weight between the
+Churchill and the Challenger 2, has been the advent of ammunition such
+as the Long Rod Penetrator (LRP) and shaped charge. Modern platforms
+require thick heterogeneous armour to defeat these types of projectile.
+The Churchill could defeat 81mm of homogenous steel armour (Cowper and
+Pannell, 2011); a tungsten LRP fired at 2000m/s from a modern Main
+Battle Tank (MBT) could defeat a metre of homogenous steel armour
+(Liden, 2010). The 74.5T weight is significant, making many roads and
+bridges inaccessible for manoeuvre. Whilst armour developments present a
+viable solution to mitigate the threat, the mobility sacrifices have
+meant that traditional passive armour development is unable to continue
+to develop in the same way. This will present a mismatch between
+firepower and protection. To enable platforms to remain survivable,
+manoeuvre platforms have had to find other avenues by which to defeat
+these highly potent threats, than passive armour alone.
+
+The advancement of Active Protection Systems (APS) has hailed as a
+solution, enabling increased survivability without the increased mass of
+traditional armour. These systems were first seen by the USSR in the
+late 70’s with the Drozd system (Meyer, 1998a). APS has continued to be
+an area of research and investment, as demonstrated by systems such as
+Trophy being integrated into the US Abrams platform (Keller, 2018). It
+was however, not until the latest generation of main battle tanks, and
+the inherent mobility vs survivability trade-off, that investment was
+seen to be wide-spread. Despite the recent growth, there remains
+inherent flaws. Whilst effective against most Anti-Tank Guided Missiles
+(ATGM) the speed and kinetic nature required of an LRP outpaces what is
+possible by APS (Hazell, 2016). Furthermore, even if an engagement was
+possible, the projectile is likely to retain sufficient residual kinetic
+energy to cause significant damage to its target, denying the ability to
+remove passive armour (Fortin, Bédard and Valcartier, 2007). Whilst
+originally promising APS, in its current guise, falls short of being
+able to reset the lethality, protection and mobility balance.
+
+Growth of autonomy and machine learning
+
+Autonomy and machine learning have been transformative in the private
+sector and are expected to have a similar effect on defence (RAS
+STRATEGY). Incremental changes have long been seen by the business world
+as insufficient to generate long lasting advantage (Bradley, Smit and
+Hirt, 2018). The application of these technologies to the complex and
+challenging problem of platform survivability may provide a sufficient
+leap to break the innovation cycle and generate lasting advantage.
+
+Application to the problem
+
+Enabling yaw
+
+Trust and risk
+
+Statement of purpose: This paper will demonstrate an approach by which a
+layered combination machine learning algorithms, integrated into an
+autonomous platform and applied to platform defence, could defeat a LRP
+and enable a step-change in platform survivability.
+
+Methodology. 
+
+Results.
+
+Discussion. 
+
+Dependancy on level of autonomy
+
+Platform agency.
+
+Balance of risk and protection in autonomous systems.
+
+Phalanx example.
+
+Stands distinct from the development of autonomous weapon systems as it
+aims to protect life.
+
+Other potential use cases.
+
+CRANFIELD UNIVERSITY
+
+MAJOR TOM SCOTT
+
+DEFEAT OF A LONG ROD PENETRATOR USING AN AUTONOMOUS SYSTEM:
+
+ASSESS THE FEASIBILITY OF SEPARATING THE ACTIVE PROTECTION SYSTEMS FROM
+THE PROTECTED PLATFORM, USING AN AUTONOMOUS SYSTEM, TO DEFEAT THE THREAT
+OF A LONG-ROD PENETRATOR.
+
+Cranfield Defence and Security
+
+MSc Thesis
+
+Battlespace Technology Course (BTC 13)
+
+Aug 2020
+
+Cranfield University
+
+Cranfield Defence and Security
+
+MSc Thesis
+
+Battlespace Technology Course (BTC13)
+
+Registered on MSc in Academic Year 2019-2021
+
+MAJOR TOM SCOTT
+
+Assess the feasibility of separating the Active Protection Systems (APS)
+from the protected platform, using an autonomous system, to defeat the
+threat of a long-rod penetrator (LRP).
+
+Academic Supervisor: Dr Rachael Hazael
+
+Aug 2020
+
+This thesis is submitted as part of the Master of Science Degree in
+Battlespace Technology. It was written by a student on the Battlespace
+Technology Course. It has not been significantly altered or corrected as
+a result of assessment and it may contain errors or omissions. The views
+expressed in it, together with any recommendations, are those of the
+author and not Cranfield University or individual members of its staff.
+
+© Crown Copyright Aug 2020. All rights reserved. No part of this
+publication may be reproduced without the written permission of the
+copyright holder.
+
+ABSTRACT
+
+Armoured platforms were the product of an arms race and this has been a
+defining characteristic of their existence. The competition between
+firepower and protection has been a cycle that has served to
+consistently increase the weight of the platforms, to the extent that it
+cannot continue. As a result, new and novel methods of protection must
+be sought to defeat the increasing firepower threat. The most
+challenging of these threats could be perceived to be the long-rod
+penetrator; extremely fast, low-signature and un-jammable, they present
+a threat to which passive armour and current Active Protection Systems
+cannot defeat. The continued development of land autonomous systems may
+present an opportunity, by dislocation the defence and the target
+platform, to defeat using different mechanisms, quicker and more
+dynamically, exploiting the virtues of an autonomous platform. This
+paper seeks to demonstrate, theoretically, how such an approach could
+generate an Active Protection System that can out-perform current models
+by defeating the pacing threat of a long-rod penetrator.
+
+Keywords:
+
+Artificial Intelligence (AI), Unmanned Ground Vehicle (UGV), Defensive
+Aid Suites (DAS), Active Protection, manoeuvre, armour, Long Rod
+Penetrator (LRP), autonomy, survivability, Manned Unmanned-Teaming
+(MUM-T), Armour.
+
+ACKNOWLEDGEMENTS
+
+Firstly, I would like to thank Dr Rachael Hazael, my thesis advisor, for
+her support and advice throughout the entirety of this project. Your
+advice from the outset enabled me to turn what was a fledgling idea into
+a viable concept and Throughout your guidance and feedback has been
+incredible, ensuring that I was able to keep true to my aim, during what
+has been a rather unconventional period of research.
+
+I would also like to thank Jeremy Smith for allowing me to benefit from
+his wealth of simulation and modelling knowledge. Your advice was
+exceptionally helpful and enabled me to develop a set of models that,
+without your advice, would not have been possible.
+
+Finally, to my Fiancé, Henrietta. You have tirelessly supported,
+motivated and inspired me throughout this journey and without your help
+none of it would have been possible.
+
+TABLE OF CONTENTS
+
+ABSTRACT i
+
+ACKNOWLEDGEMENTS ii
+
+LIST OF TABLES vii
+
+LIST OF EQUATIONS viii
+
+LIST OF ABBREVIATIONS ix
+
+1 INTRODUCTION 1-1
+
+1.1 Background 1-1
+
+1.2 Project Aim 1-3
+
+1.3 Project Scope 1-3
+
+1.4 Concept Introduction 1-5
+
+2 LITERATURE REVIEW: LONG ROD PENETRATOR 2-1
+
+2.1.1 Trajectory 2-1
+
+2.1.2 Range 2-4
+
+2.1.3 Speed 2-6
+
+2.1.4 Length 2-10
+
+2.1.5 Baseline LRP Characteristics 2-12
+
+2.2 Literature review APS 2-12
+
+2.2.1 Review of current active protection methods 2-13
+
+2.2.2 APS Analysis 2-15
+
+2.2.3 LRP defeat methods 2-19
+
+2.3 Concept Requirements 2-24
+
+3 DETECT THE THREAT 3-1
+
+3.1 Sensor Requirements 3-1
+
+3.1.1 Track the Protectee 3-2
+
+3.1.2 Detect the Threat. 3-6
+
+3.1.3 Track the Threat. 3-10
+
+3.1.4 Developing the intercept point. 3-15
+
+3.2 Summary 3-18
+
+4 ENGAGE THE THREAT 4-2
+
+4.1 Probability of hit 4-2
+
+4.1.1 Assumptions 4-2
+
+4.1.2 Define 4-3
+
+4.1.3 Establish 4-13
+
+4.2 System requirements 4-22
+
+5 Additional engagement characteristics 5-24
+
+5.1 Where to hit 5-24
+
+5.1.1 Real world case studies. 5-27
+
+6 CONCLUSION 6-1
+
+6.1 Requirements and characteristics 6-1
+
+6.2 Practical Feasibility 6-2
+
+6.3 Applicability in a complex environment 6-5
+
+6.4 Summary 6-6
+
+7 AREAS OF FUTURE RESEARCH. 7-1
+
+8 REFERENCES 8-2
+
+LIST OF FIGURES
+
+Figure ‎1‑1 Sub-system dependency model 1-4
+
+Figure ‎1‑2 Stage 1-3 of the process. 1-6
+
+Figure ‎1‑3 Stage 4 of the process. 1-6
+
+Figure ‎2‑1 Demonstration of Aerodynamic Jump (Bundy, 2001) 2-2
+
+Figure ‎2‑2 Yaw rate over the flight of an LRP (Sharma-Panda et al.,
+2017). 2-3
+
+Figure ‎2‑3 Dataset of range (Table ‎2‑1) plotted with the mean,
+standard deviation and the selected baseline range assumptions. 2-6
+
+Figure ‎2‑4 LRP and ATGM speed (m/s) and Time of Flight (s) comparison.
+2-8
+
+Figure ‎2‑5 LRP speed (m/s) and Time of Flight (s) comparison. 2-9
+
+Figure ‎2‑6 Plot of Length/Diameter 2-11
+
+Figure ‎2‑7 Iron Fist projectile pictured just before detonation in the
+defeat of an RPG-7 projectile. (General Dynamics OTS, 2011). 2-15
+
+Figure ‎2‑8 Diagram showing a comparison of engagement ranges between
+the aforementioned systems 2-17
+
+Figure ‎2‑9 Iron Fist Light Launcher module. 2-18
+
+Figure ‎2‑10 Sequences of damage plot during the interaction with a
+forward/backwards moving plate (Liden, 2010) 2-20
+
+Figure ‎2‑11 Rocco yaw angle data plotted cumulatively 2-23
+
+Figure ‎2‑12 Yaw angle prediction using polynomial regression 2-24
+
+Figure ‎3‑1 Engagement sequence 3-2
+
+Figure ‎3‑2 The recorded paths of a leader-follower, displaying both a
+corrected and an uncorrected IMU, highlighting the impact of IMU drift.
+(Borenstein et al., 2010) 3-5
+
+Figure ‎3‑3 Visual representation of method 1 against the platform and
+shot signature. 3-7
+
+Figure ‎3‑4 Directional view of an LRP sabot discarding (Huang, Wessam
+and Chen, 2014) 3-8
+
+Figure ‎3‑5 Engagement sequence model showing engagement time (s)
+engagements at each of the chosen ranges. 3-10
+
+Figure ‎3‑6 Interception calculation data requirement diagram 3-11
+
+Figure ‎3‑7 Azimuth and elevation triangulation using multiple IR
+sensors (Ullah, Song and Kirubarajan, 2015) 3-14
+
+Figure ‎3‑8 Linear regression algorithm showing relationship between
+distance from the platform and time of flight 3-16
+
+Figure ‎3‑9 Layered sensor data points 3-17
+
+Figure ‎3‑10 Active sensors model: image processing, RADAR and LiDAR.
+3-19
+
+Figure ‎3‑11 Passive sensor model: Image Processing, passive RADAR and
+passive IR. 3-19
+
+Figure ‎4‑1 Probability of Hit 4-2
+
+Figure ‎4‑2 Intercept probability diagram 4-4
+
+Figure ‎4‑3 X_Data development 4-6
+
+Figure ‎4‑4 X,Y Intercept Model Data 4-7
+
+Figure ‎4‑5 Success Threshold. The black dashed line shows a >0.7 the
+green dashed line shows a >0.8. 4-8
+
+Figure ‎4‑6 Data distribution. each of the violin plots represent the
+spread of predicted intercept points for each combination of sensor
+accuracy (x-axis) and variance. 4-8
+
+Figure ‎4‑7 25mm Probability using polynomial regression 4-9
+
+Figure ‎4‑8 Z Intercept model data. 4-11
+
+Figure ‎4‑9 Z-Axis Intercept model representation, displaying the
+prediction curves for each of the last sensed data times, the dashed
+line represents a PPip of 0.7. 4-12
+
+Figure ‎4‑10 Effector probability diagram, the blue shaded area
+represents the potential spread of the effector.. 4-14
+
+Figure ‎4‑11 Critical Ricochet angle of a LRP (Daneshjou and Shahravi,
+2008) 4-15
+
+Figure ‎4‑12 Kinetic Energy of a 10g and 100g projectile, the red line
+represents 3300J of KE. 4-16
+
+Figure ‎4‑13 Effector engagement distances, each black line represents
+the three potential engagement times 4-19
+
+Figure ‎4‑14 Trajectory comparison (ShootersCalculator, 2020) 4-20
+
+Figure ‎4‑15 ISO 286 manufacture tolerances (International Organisation
+for Standardisation, 2010) 4-21
+
+Figure ‎4‑16 Dispersion rates across ISO 286 IT levels, 100% of eff
+diameter = 25mm 4-22
+
+Figure ‎4‑17 Summary probability tree 4-22
+
+Figure ‎5‑1 Projectile section definition 5-25
+
+Figure ‎5‑2 Initial impact and effect of drag from a plan view. 5-26
+
+Figure ‎5‑3 Area plot showing the impact on likelihood of hit for
+differing percentages of the baseline dimensions. 5-29
+
+Figure ‎6‑1 Practical engagement sequence example. 6-3
+
+Figure ‎6‑2 Cone of protection calculation at minimum intercept range
+(9m) and a larger range (20m) 6-4
+
+LIST OF TABLES
+
+Table ‎2‑1 Consolidated engagement data (Olsen, 1994). 2-5
+
+Table ‎2‑2 Consolidated list of APFSDS data. 2-6
+
+Table ‎2‑3 Summary of L/D data 2-11
+
+Table ‎2‑4 Summary of LRP baseline characteristics 2-12
+
+Table ‎2‑5 List of reviewed APS 2-13
+
+Table ‎2‑6 Yaw angle at certain distances (Rocco, 2018) 2-22
+
+Table ‎2‑7 Summary of Concept Requirements 2-25
+
+Table ‎4‑1 Effector requirements 4-23
+
+Table ‎5‑1 Projectile kinetic energy 5-25
+
+Table ‎5‑2 Projectiles with the smallest dimensions 5-27
+
+Table ‎6‑1 Consolidated table of system requirements and
+characteristics. 6-1
+
+LIST OF EQUATIONS
+
+Equation ‎3‑1 Radar range equation 3-13
+
+Equation ‎4‑2 X, Y Intercept equation 4-7
+
+Equation 4-3 PPip variables 4-13
+
+Equation 4-4 Kinetic Energy 4-15
+
+Equation 4-5 Energy transfer upon impact equation 4-16
+
+LIST OF ABBREVIATIONS
+
+  AI       Artificial Intelligence
+  -------- -------------------------------------------------
+  AFV      Armoured Fighting Vehicle
+  APC      Armoured Personnel Carrier
+  APFSDS   Armour Piercing Fin Stabilised Discarding Sabot
+  APS      Active Protection System
+  ATGM     Anti-Tank Guided Missile
+  COTS     Commercial Off-The-Shelf
+  CU       Cranfield University
+  DGPS     Differential Global Positioning Satellite
+  EMS      Electro-Magnetic Spectrum
+  ERA      Explosive Reactive Armour
+  IMU      Inertial Measurement Unit
+  LRP      Long Rod Penetrator
+  L/D      Length/Diameter
+  LDEW     Laser Directed Energy Weapons
+  LiDAR    Light Detection and Ranging
+  LOS      Line of Sight
+  MBT      Main Battle Tank
+  MEFP     Multiple Explosively Formed Projectiles
+  MWR      Millimetric Wave Radar
+  PIP      Projectile Intercept Point
+  RADAR    Radio Detection and Ranging
+  RCS      Radar Cross-Section
+  TRL      Technology Readiness Level
+  ToF      Time of Flight
+  UAS      Unmanned Aerial System
+  UGV      Unmanned Ground Vehicle
+           
+           
+           
+           
+
+INTRODUCTION
+
+Background
+
+Manoeuvre warfare, by definition, has sought to avoid strengths and
+exploit weaknesses (Clemons and Santamaria, 2002). As a result, it has
+found itself in a cycle of innovation, each change incurs a reaction,
+which in turn initiates a counteraction (Steven and Watt, 2010). This
+cycle has led to consistent, iterative development in both AFV
+protection and lethality simultaneously. World War Two can provide some
+of the best examples of such development, the Matilda (1941) and the
+Churchill (1944) are both employed in the infantry support roles, yet
+the Churchill increased in weight by 30% (Cowper and Pannell, 2011). As
+manoeuvre warfare has developed, as too have protection and lethality
+requirements, the Churchill weighted 35.3T, a Theatre Entry Standard
+Challenger 2 weighs 74.5T (Jane’s, 2019). Developments in lethality and
+protection are ultimately driven by the requirements for one to defeat
+the other. As such, lethality and protection developments are cyclical
+and directly related, as one increases so too must the other, ultimately
+resulting in a trade-off against weight and mobility (Rahman et al.,
+2017).
+
+One of the key drivers for the 111% increase in weight between the
+Churchill and the Challenger 2, has been the advent of ammunition such
+as the Long Rod Penetrator (LRP) and shaped charge. Modern platforms
+require thick heterogeneous armour to defeat these types of projectile.
+The Churchill could defeat 81mm of homogenous steel armour (Cowper and
+Pannell, 2011); a tungsten LRP fired at 2000m/s from a modern Main
+Battle Tank (MBT) could defeat a metre of homogenous steel armour
+(Liden, 2010). The 74.5T weight is significant, making many roads and
+bridges inaccessible for manoeuvre. Whilst armour developments present a
+viable solution to mitigate the threat, the mobility sacrifices have
+meant that traditional passive armour development is unable to continue
+to develop in the same way. This will present a mismatch between
+firepower and protection. To enable platforms to remain survivable,
+manoeuvre platforms have had to find other avenues by which to defeat
+these highly potent threats, than passive armour alone.
+
+One method of increasing survivability is to invest in Active Protection
+Systems (APS). These systems were first seen by the USSR in the late
+70’s with the Drozd system (Meyer, 1998a). APS has continued to be an
+area of research and investment, as demonstrated by systems such as
+Trophy being integrated into the US Abrams platform (Keller, 2018). It
+was however, not until the latest generation of main battle tanks, and
+the inherent mobility vs survivability trade-off, that investment was
+seen to be wide spread. This could be the result of technological
+developments increasing the capability of APS, but also suggests that
+the balance between protection, lethality and mobility cannot be
+maintained. APS is generally broken into two areas, hard and soft kill.
+Hard kill is defined as ﻿“systems that are able to detect, track and
+engage an incoming projectile threat” (Hazell, 2016) and Soft Kill is
+defined as a “﻿system designed to avoid threats by confusing or
+re-directing the threats using jammers, decoys, and signature reduction
+measures” (Houliotis et al., 2018). Primarily APS was developed for
+three reasons (Meyer, 1998a):
+
+1.  Anti-Tank Guided Missiles (ATGMs) had developed beyond the
+    capability of traditional armour systems. This is most notably the
+    result of top attack profiles (Jane’s Defence, 2019a) which target
+    the top of the turret, the area with the least armour distribution,
+    and tandem shaped charge warheads (Wisniewski and Podgorzak, 2005).
+
+2.  It is significantly cheaper to develop applique or modular APS
+    systems for platforms than develop and fit complex armour systems.
+
+3.  The Drozd system weighed only 800kg and afforded protection for up
+    to a 40° arc, in effect this would covering the frontal arc of the
+    Whittaker model (Hazell, 2016). This lightweight enables the same
+    protection level to be fitted to both light (<20T) and heavy (>20T)
+    armoured vehicles, with minimal effect on mobility.
+
+These advantages are significant and present a very attractive
+opportunity for protection development. Hard Kill APS in particular
+presents three significant weaknesses, which make them fall short of an
+ideal armour solution:
+
+-   The physics required to defeat a LRP is significant, despite
+    technological advances modern APS still falls short of providing a
+    reliable method of defeating the threat (Hazell, 2016).
+
+-   The explosive force required to defeat a threat is significant. This
+    also causes a sizeable level of collateral concerns, limiting its
+    employment in the urban environment or in the vicinity of dismounts
+    (Hazell, 2016). For example the Arena system uses a fragmentation
+    grenade with a safety range of up to 30m (Meyer, 1998b).
+
+-   The residual energy of a projectile may still be significant.
+    Projectiles are often engaged at close range to the platform. As a
+    result APS does not achieve the same protection effect for lightly
+    armoured vehicles, which must rely more upon soft kill systems to
+    defeat at range (Fortin, Bédard and Valcartier, 2007).
+
+An LRP exacerbates each of the three weaknesses above. They are
+extremely fast, retain significant kinetic energy and their kinetic
+nature prevent soft kill effects. When combined, these factors suggest
+that the LRP is the most difficult threat for APS to defeat.
+
+Project Aim
+
+The aim of this research project is to verify the feasibility of
+employing autonomous Unmanned Ground Vehicles (UGV) to provide active
+protection to manned platforms. By doing so, it will demonstrate that
+they could outperform current Commercial Off The Shelf (COTS) APS
+systems, by defeating the LRP threat. The research will focus on the
+technical feasibility of this activity, in order to justify this
+hypothesis.
+
+Project Scope
+
+The concept of an autonomous active protection platform is a complex and
+broad subject, which could form multiple independent theses. This paper
+will therefore require a tight scope of work to ensure that the project
+aim is focussed to achieve the depth required for this thesis. The
+object of this research is solely the protection capability of the
+platform, it will therefore only focus on the sub-systems directly
+related to this action; the sensors, effectors and processing tools.
+Figure ‎1‑1 illustrates how these components relate and their importance
+to the system as a whole. Sub-systems such as the navigation tools and
+automotive capabilities will not be included within the scope of the
+essay. Each of the sub-systems will be examined in detail and either
+tested or modelled, however, the project will not test the full
+integration of the functions. Some emerging technologies will be
+explored, though the paper will only discuss capabilities that are
+considered currently technologically feasible. For the purpose of this
+thesis, using the MOD’s Technology Readiness Levels (TRL),
+technologically feasible is defined as TRL 3 and above (UK Government,
+2014). Some aspects of the employment of the platform will be used to
+demonstrate its utility and bound the constraints in which it must
+operate. This project will however focus on the technological
+feasibility of the concept not the doctrine of its usage, which excludes
+areas such as resupply or recharging.
+
+[A close up of a logo Description automatically generated]
+
+Figure ‎1‑1 Sub-system dependency model (Heine, Wickert and Thoma, 2013)
+
+To provide the scope of the research the following assumptions will be
+made about the concept:
+
+-   The platform will have sufficient mobility to maintain pace with the
+    formation it is protecting. This assumption is based on the state of
+    current UGV technologies such as the Textron Ripsaw (Maundril,
+    2019).
+
+-   Full autonomy is technologically feasible for this type of platform.
+    The current probability that 10% of all US cars on the road being
+    driverless by 2025 is 78% (Schwab, 2016). The complexity required
+    for driverless cars exceeds that of this platform which perhaps
+    better reflects the technology of current follow-me drones using
+    proximity, rather than GPS (Mao et al., 2017). It is thus assumed
+    that the platform is capable of operating with sufficient autonomy
+    to navigate, move and engage the targets, within a set of human
+    dictated parameters, a mission.
+
+-   LRP ammunition and gun systems have not developed beyond current in
+    service capabilities. Whilst it is accepted that lethality
+    capabilities will continue to develop, to ensure that an effective
+    baseline for experimentation exists the most current capability will
+    be assumed to be the most potent threat.
+
+-   The platform retains sufficient power to execute its task for the
+    duration of its mission. Autonomy will have high power demands,
+    however, it is assumed that the advances in battery technology will
+    provide enough power to sustain the operation of the platform.
+
+-   Policies and regulations to enable battlefield use of autonomous
+    platforms capable of kinetic effects are in place. Furthermore, such
+    platforms are of sufficient maturity to enable their employment in
+    the direct vicinity of manned platforms.
+
+Concept Introduction
+
+The concept utilises a system of UGVs to provide active protection to a
+small armoured vehicle formation. Each UGV will autonomously position
+itself then detect, classify and defeat incoming threats to the
+formation, forming an active protection bubble similar to Electronic
+Counter Measures. A potential platform use may be in the protection of
+Strike Combat Teams from the UK’s Strike Brigade (Watling and Bronk,
+2019), in which small packets of 4-8 vehicles will be operating
+independently within the enemy’s area of operation. The primary vehicles
+in Strike, Ajax and the Mechanised Infantry Vehicle, are not heavy
+armour and as such are vulnerable in the area, especially to tanks. In
+this situation, the inclusion of an autonomous active protection
+platform could be employed to reduce this threat.
+
+The concept operates in four distinct phases to provide protection.
+Stage one, the platform establishes itself in relation to the protected
+formation, then in relation to other protection platforms, ensuring
+deconfliction, then finally in relation to the likely threat areas.
+Stage two, the platform will then identify and classify likely threat
+areas to increase the speed of target acquisition. Stage three is
+initiated at the point at which a threat is detected, at this stage the
+platform will classify the threat, then predict its speed, flightpath
+and Predicted Intercept Point (PIP). Finally, stage four, the system
+will initiate its effector to neutralise the threat. The process is
+represented pictorially in Figure 1‑2 and Figure 1‑3.
+
+[][A picture containing ground, outdoor, sky Description automatically
+generated]
+
+For the UGV to be effective it is reliant upon a high degree of
+autonomy. Many nations define autonomous weapon systems differently, a
+House of Lords select committee was established to understand the
+implications of autonomy for UK defence. The difference between nations
+can be quite stark and is likely to be the result of potential areas of
+future investment. Autonomous weapon systems particularly attract a
+large amount of moral debate, as a result, some nations are
+significantly more risk averse in their definitions. It is also likely
+that this is why the UK have in fact declined to define autonomous
+weapons, accepting that they will accept any internationally agreed
+definition, but until that point they suggest that the UN Convention of
+Human Rights is a sufficient limit for the capability (House Of Lords,
+2018). This would suggest that the UK is unwilling to formally declare
+its investment in autonomous weapon systems, but is actively researching
+it as an area of development. The US have defined the concept and given
+the alignment of the US and UK defence approaches, this will be a
+sufficient definition for this paper:
+
+“A weapon system that, once activated, can select and engage targets
+without further intervention by a human operator.” (House Of Lords,
+2018)
+
+Autonomy is often detailed in levels from 1-5 (Ward, 2018), scoped from
+minor task automation to operating entirely without human input. For the
+system to be reactive enough to detect, process and defeat threats it
+must be of at least level four, a very high level requiring input only
+to initiate tasks. These levels of autonomy are still developing, with
+the nearest example being autonomous vehicles (Capgemini, 2019),
+however, a level 4 autonomous vehicle is predicted to be ready by 2021.
+As such, for the remainder of this project, it will be assumed that
+level four autonomy will be technologically viable. In this concept
+level four autonomy may require a user only to dictate the arcs of
+likely threats. Whereas level five would require no interaction from
+vehicle crews once the system is activated.
+
+High levels of autonomy are complex and such platforms are a large leap
+in capability from current in service UGVs. It must however, be
+acknowledged that to retain the technical advantage such jumps must be
+made, systems like this could ensure that a force retains the
+“intellectual edge” (Ryan, 2019). In addition, autonomous systems in
+this specific context provide a number of key benefits to a user,
+demonstrating its suitability for this concept:
+
+-   The platforms are geographically dislocated from the protected
+    platform, generating standoff and enabling yaw-induction to be an
+    effective counter.
+
+-   The system can be re-allocated immediately to protect a platform of
+    greater need, this means that significantly fewer numbers are
+    required when compared to an integrated platform APS.
+
+-   The dislocation from the protected platform significantly reduces
+    the likelihood of collateral damage to personnel, when contrasted
+    with other current Hard Kill systems.
+
+-   With the UGV being designed solely for this purpose its entire
+    payload can be dedicated to the task enabling significantly greater
+    payload than a current platform mounted system.
+
+-   Similarly, the power available to be dedicated to active protection
+    is likely to be much higher than that of a platform which has active
+    protection as a secondary task. This therefore means the system
+    could increase in complexity.
+
+-   Manned platforms will not have the increased weight of a Hard-Kill
+    APS, meaning that they do not have to sacrifice mobility for
+    protection.
+
+-   The response time required from threat detection to launch of
+    effector is too short for a man-in-the-loop, it must be done
+    autonomously. For example a projectile firing at 1200m/s from 1500m
+    away will only have a 1.25s time of flight.
+
+Developments in autonomous systems is inherently juxtaposed by the moral
+complexity of arming a system which in effect thinks for itself, it
+therefore must be highlighted as a significant constraint to the
+concept. The ethics of autonomy is a vast subject and it will not be
+covered in detail within this paper[1]. The concern stems from the
+reality that a human death being the result of an entirely autonomous
+decision. An autonomous system inherently lacks emotion in its decision
+making. This means the value of life is not a factor to the robot
+(Petman, 2017), it may therefore make different decisions during an
+engagement than a human would make. A distinction must be made between
+Artificial Intelligence as a whole, and machine learning. The ethical
+complexities of a system which uses learned experience to develop and
+adapt its behaviour has far greater implications than a “narrow” AI
+system (Naudé and Dimitri, 2019) that makes its decisions based on
+pre-determined rule sets, this is exacerbated by experiences of machine
+learning outcomes being unpredictable(de Saint Laurent, 2018). In
+November 2017, of the 86 countries which met to debate the legality of
+autonomous weapons systems, 22 supported prohibition of the capability
+(House Of Lords, 2018), demonstrating the true level of concern these
+systems invoke.
+
+There is a significant counter-argument to the ethical concerns around
+the use of autonomous weapons. Regardless of application, inherently the
+system will save lives of the user, and it does so without fatigue or
+ambiguity. The concept stated within this paper expands on this latter
+point, as a defensive system it is designed to save the lives of those
+it protects, despite being armed, its primary target are projectiles. In
+light of these factors, it is assumed that this system will either
+satisfy the ethical concerns regarding its use or public opinion will
+adapt, as understanding of the technology becomes more widespread.
+
+LITERATURE REVIEW: LONG ROD PENETRATOR 
+
+The intent of this review is to understand the key characteristics of a
+LRP, the limitations of passive systems and the state of active systems.
+The majority of studies around the LRP topic have been in relation to
+impact characteristics and penetrative capability. This review will
+therefore establish a baseline of LRP knowledge in these areas by
+reviewing the limited relevant prior studies. The paper will then
+analyse and build upon the data, with the ultimate outcome being the
+formulation of parameters and requirements for which the APS must
+satisfy to defeat an LRP. To correctly define the characteristics of an
+LRP, the paper will assess four components, which relate specifically to
+the flight of the projectile: trajectory, speed, length and range. Each
+one of these directly correlates to a design criterion of the APS.
+
+Trajectory
+
+The trajectory of an LRP is relevant to the operation of APS system as
+it is a unique characteristic it could enable a potential threat to be
+easily classified, through determination of its approach angle. This
+would enable projectile recognition. The flat profile of an LRP is in
+direct contrast to ATGMs such as Javelin, which has a steep dive profile
+(Jane’s Defence, 2019a) or the Kornet-E which laser-beam riding guidance
+causes it to constantly adjust in flight, creating a highly irregular
+profile. Arguably the most important reason is that it enables an
+interception point determination, by adding a predictability component.
+These opportunities whilst highly helpful in enabling the defeat of a
+system do face an element of complexity.
+
+Whilst the kinematic nature of the round would infer that the trajectory
+would be flat and straight, enabling the round to correlate with the
+sight picture and hit the target, this is in-fact false. The projectile
+has two phases of flight, launch-disturbance and free flight (Bundy,
+2001). Launch-disturbance is characterised by the projectile retaining
+its sabot, this can cause drag which can cause unbalances and deviation
+from the line of the barrel, similarly the launch itself can cause
+lateral effects on the projectile. Free-flight is denoted as the point
+at which the sabot no longer interacts with the projectile, the sabot
+will begin to disengage from the projectile once it has left the barrel,
+it is at this point where Aerodynamic Jump can occur. If the sabot is
+asymmetric as a result of high launch disturbance, it can cause an
+uneven sabot discard, generating lift and drag in a manner which can
+cause the projectile to swerve. As the free-flight continues this
+phenomena will reduce, but it could have a direct effect on the axis of
+the round, this is characterised by Figure ‎2‑1:
+
+[A close up of a map Description automatically generated]
+
+Figure ‎2‑1 Demonstration of Aerodynamic Jump (Bundy, 2001)
+
+This paper continues and suggests that Aerodynamic Jump can be accounted
+for through a formulaic algorithm by the launch platform, this does not
+entirely transfer to the target platform. Aerodynamic Jump effects are a
+result of the variance within the launch sequence and immediate
+environment; these are unlikely to be the predictable at the target
+platform. As such, it will be very difficult for the impact of the
+projectile to be calculated effectively. Aerodynamic Jump will force the
+APS platform to either account for it or extend the sensor sample time
+beyond the effects of the phenomena. This is a key constraint on
+engagement boundaries.
+
+The second area which may impact on the trajectory of a projectile is
+the meteorological effects. This has been demonstrated to have a
+significant impact of the trajectory of projectiles such as artillery
+shells (Zhou, Wang and Zhou, 2016). A Defence Technology paper that
+assessed the reasons for dispersion among LRP engagements concluded that
+meteorological variables did effect the dispersion of LRP (Sharma-Panda
+et al., 2017). Whilst it does demonstrate that pressure, temperature and
+wind had an impact on the dispersion, even when combined, it only
+contributed to 0.8% (from the ±1α column) of the dispersion when
+compared with either pitch or yaw. This is likely to be because of the
+significant speed, flat profile and relative short range when compared
+to artillery, which means that meteorological variances are minimised
+throughout the flight profile. As such it will be assumed through this
+paper that the impact of meteorological factors will not affect the
+trajectory of the projectile.
+
+The same study also analysed the yaw profile over the flight of a
+projectile. Through modelling and live validation, it created a
+projection of the yaw profile for five separate designs of LRP, Figure
+‎2‑2 shows the results. This graph demonstrates two key characteristics
+that have significant utility to the APS platform. Firstly, regardless
+of the initial yaw angle the amplitude, as also seen in Figure ‎2‑1,
+settled to a negligible angle as the time of flight progressed.
+Secondly, the graph demonstrates that the yaw follows a predictable and
+uniformed pattern. When these two factors are combined it leads to the
+suggestion that although the projectile may yaw throughout flight, and
+despite an initial yaw angle being high, the mean trajectory could be
+calculated relatively early in the flight using a method such as linear
+regression.
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure ‎2‑2 Yaw rate over the flight of an LRP (Sharma-Panda et al.,
+2017).
+
+ Range
+
+The second LRP characteristic, which has a significant relevance to the
+performance of the protection system, is the range from which it is
+fired. The range, when combined with the speed, will directly relate to
+the projectile time of flight and therefore dictate the time available
+for the system to detect, process and defeat. This will therefore become
+a key constraint for the protection system, if the processing takes too
+long the ranges from which it the system is effective will be
+significantly reduced. Through analysis of some existing data sets this
+section of the literature review will aim to generate the likely
+engagement ranges as an output.
+
+The Military Operations Research Society study of engagement ranges was
+initially developed to support the acquisition of Anti-Tank Guided
+Missiles with a range beyond 2km (Olsen, 1994). The data was focussed on
+two areas, firstly tank engagements in World War II, then it analysed a
+series of defensive positions and defined the line of sight (LOS) from
+that location. This therefore has high relevance to understanding modern
+engagements. There have been technical advances in tank technology since
+WWII, especially sights and fire control computers. These advances have
+however, somewhat been mitigated within the dataset by the addition of
+LOS data. It is assumed that elevation, curvature of the earth and
+atmospheric conditions were the biggest determining factor of LOS and it
+is also assumed that these remain largely similar. To maintain this
+papers classification, it is inferred that this data remains accurate
+for today. The data has been consolidated into Table ‎2‑1, which details
+the percentage of engagements that happened below a certain range. Some
+of the LOS data was taken from very open terrain, which causes a
+distortion well beyond the standard deviation of the dataset. Most
+modern platforms using an LRP are limited by engagement range, the
+Challenger 2, which is still a leading platform has an effective range
+of >2000m (Jane’s Defence, 2020). Serials 2.2 and 3.3 have been excluded
+from the data, as the 90% figure for engagements were significantly
+above the effective range of most LRP rounds, therefore an engagement
+above this range would not be possible.
+
+Table ‎2‑1 Consolidated engagement data (Olsen, 1994).
+
+[A screenshot of a cell phone Description automatically generated]
+
+The consolidated data has been displayed on the graph in Figure ‎2‑3
+Dataset of range (Table ‎2‑1) plotted with the mean, standard deviation
+and the selected baseline range assumptions.. It details the mean and
+standard deviation of the data at each of the percentage marks. The
+graph clearly demonstrates that there is a correlation of the data,
+however in this instance using the mean across each value set may not
+present the best outcome. To account for two factors, the technological
+advances since WWII and the maximum assumed effective range of an LRP of
+2000m, the paper will use the 50% positive standard deviation, 90% mean
+and 99% negative standard deviation. This generated a range outcome of
+840m, 1550m and 1990m. These figures represent a reasonable dispersion
+across the possible engagement ranges and therefore could be used as a:
+short, average and long, baseline range set for the system to be tested
+against.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎2‑3 Dataset of range (Table ‎2‑1) plotted with the mean,
+standard deviation and the selected baseline range assumptions.
+
+Speed
+
+One of the characteristics that makes defending against an LRP so
+demanding is the projectiles speed. The data in Table ‎2‑2 shows data
+from a selection of the most common LRP’s in service today. The study of
+these systems was designed to develop an average LRP speed from which a
+baseline figure for the remainder of the research can be derived. The
+speed data has a mean of 1664m/s and a standard deviation of 89m/s. The
+deviation is sufficiently close to consider 1664m/s as a reasonable
+baseline figure for LRP speed.
+
+Table ‎2‑2 Consolidated list of APFSDS data.
+
+  Projectile Name   Year   Speed(m/s)   Length(mm)   Country of Origin   References
+  ----------------- ------ ------------ ------------ ------------------- -------------------------
+  3BM32             1985   1700         4860         Russia              (Jane’s Defence, 2019b)
+  3BM42             1988   1700         5710         Russia              (Jane’s Defence, 2019b)
+  3BM46             2016   1700         6350         Russia              (Jane’s Defence, 2019b)
+  OFL F2            1996   1780         5940         France              (Jane’s Defence, 2019c)
+  DM88              2016   1715         7450         Germany             (Jane’s Defence, 2019d)
+  M829A1            1992   1560         6840         USA                 (Jane’s Defence, 2019e)
+  M829A3            2003   1555         6840         USA                 (Jane’s Defence, 2019e)
+  L27A1             2001   1534         5120         UK                  (Jane’s Defence, 2019f)
+  125-1             1993   1730         5540         China               (Jane’s Defence, 2019g)
+
+When the data from a LRP is compared to that of ATGM’s, which most APS
+systems are designed to defeat (Fortin, Bédard and Valcartier, 2007), a
+significant void between the two projectiles is seen. Figure ‎2‑4
+displays the correlation of Table ‎2‑2 and the addition of the Kornet E
+(Global Security, 2019), MMP (MBDA, 2018) and Spike MR (Teal Group,
+2019) ATGM’s. It shows a clear disparity between the time of projectile
+flights at the previously established baseline distance, between the two
+systems, in which lies the clear challenge of the APS system. This is
+demonstrated by the red section within Figure ‎2‑4, the ATGM time of
+flight is at best over 4.5s greater than an LRP. The system must still
+be capable of defeating the projectile in a similar manner, despite the
+significant increase in speed and reduction in ToF.
+
+[A picture containing text Description automatically generated]
+
+  Figure ‎2‑4 LRP and ATGM speed (m/s) and Time of Flight (s)
+  comparison.
+
+Figure ‎2‑5 plots the LRP speed from the data set in Table ‎2‑2, against
+the time of flight, in seconds. The time of flight is calculated using
+the baseline distance of 1551m as identified previously. Ultimately this
+generates a mean flight time of 0.93s. This paper accepts that targeting
+the mean, may generate a capability which may not defeat the most
+difficult threat, however, each projectile has both strengths and
+weaknesses, a particularly fast projectile may have reduced weight and
+therefore not be the greatest threat. Assuming the most difficult in all
+aspects, could create a very demanding hypothetical threat, which didn’t
+reflect reality. As a result this paper will use the average projectile
+as a baseline, generating a demanding ask, but not the most demanding,
+in all areas. As a secondary task, the paper will refine and test some
+models against the most challenging individual variables, such as speed
+or length, to understand how these aspects would impact the engagement.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎2‑5 LRP speed (m/s) and Time of Flight (s) comparison.
+
+Another area that must be addressed in the area of speed, is to
+understand the development trends of LRP. One area could be the
+development of hypervelocity LRP launchers. Hypervelocity is generally
+defined as speeds above 2500m/s (Paik et al., 2007). There are currently
+four primary launcher categories: chemical (propellant), light gas,
+electrically operated and electro-magnetic. Of these launchers only
+chemical and light gas are relevant for the context of this platform,
+the other two have a significant electrical demand, which makes them
+impractical for the direct fire battle. Whilst both these launchers have
+been tested, they have not yet reached a stage of development in which
+they could be effectively employed on the battlefield, due to some acute
+problems with the systems (Verma, Nomula and Bendre, 2017). Similarly
+hypervelocity launchers have reached a relatively high technology
+readiness level, for example BAE have developed their Hyper Velocity
+Projectile (HVP) (BAE Systems, 2015). The HVP has been developed in a
+155mm calibre, however as of yet, this has not transcended to 120mm
+weapons.
+
+Whilst there is continued development within hypervelocity ammunition it
+is primarily focussed towards a naval platform. This is likely the
+result of two factors, firstly, the power requirements for the most
+advanced systems, such as an EM Railgun (BAE Systems, 2015). It is also
+likely that the benefits of hypervelocity direct fire ammunition do not
+provide benefits to the land domain worthy of the investment, naval
+vessels are often very expensive and have engagements over long
+distances. With a current LRP being capable of a time of flight, less
+than a second, at the most likely engagement range, the benefits of a
+speed increase may not deliver any tactical advantage. As such,
+hypervelocity projectiles will not be considered further within this
+research.
+
+Length
+
+The final characteristic of an LRP which will impact on the employment
+of the system is the overall length of the projectile. The length
+directly affects the choice of effector. It influences the defeat
+mechanism, fragmentation or yaw, and it defines the amount of time that
+an effector has to engage. Using the data from Table ‎2‑2 we can infer
+that the mean length is 607mm, which means that at baseline speed the
+projectile will travel its own length in 400μs. This will be the
+baseline for the remainder of the research. In effect, this means for
+the effector to impact, it will either have to be highly accurate or
+cover a broad area. Length is often combined with diameter to predict
+the penetration (Anderson et al., 1996), however little has been written
+to determine the impact of length on either the flight speed or flight
+profile of the projectile. Length/Diameter (L/D) is a common reference
+for an LRP and has been used as a reference in a series of research into
+LRP performance. One of these notable research areas has been into the
+impact of yaw on penetration (Gee and Littlefield, 2001). This study
+used varied L/D to fully understand the impact of yaw. The critical yaw,
+which determined the yaw at which level of penetration was reduced as a
+result, differs between the L/D10 and L/D30 rods. From this research it
+can be inferred that the two different sized projectiles differ in
+aerodynamic performance. As such, if yaw is to be a possible defeat
+method, the L/D, not just length, must be considered. Table ‎2‑3 has
+taken a sample of the LRPs formerly identified and prescribed the length
+and diameters.
+
+Table ‎2‑3 Summary of L/D data
+
+  Name     Length(mm)   Diameter   Country   References
+  -------- ------------ ---------- --------- -------------------------
+  OFL F2   594          27         France    (Jane’s Defence, 2019c)
+  DM88     745          38         Germany   (Jane’s Defence, 2019d)
+  M829A1   684          22         USA       (Jane’s Defence, 2019e)
+  M829A3   684          22         USA       (Jane’s Defence, 2019e)
+  125-1    554          28         China     (Jane’s Defence, 2019g)
+
+This data has been displayed as L/D in Figure ‎2‑6, which demonstrates
+where these LRPs sit in relation to L/D10 and L/D30 standards. It then
+defines a normalised value, which can then be used throughout the
+remainder of the research.
+
+[A screenshot of a cell phone Description automatically generated]
+
+  Figure ‎2‑6 Plot of Length/Diameter
+
+Baseline LRP Characteristics
+
+This literature review of LRP’s has defined a series of characteristics,
+which can be used as a baseline for the remainder of the research. These
+facts have been formed from a mean and therefore present a reasonable
+assumption from which to base experiments. These characteristics are
+displayed in Table ‎2‑4 below:
+
+  Table ‎2‑4 Summary of LRP baseline characteristics
+
+  Ser.   Characteristic   Value
+  ------ ---------------- ---------
+  1      Range mid        1551m
+  2      Range high       1990m
+  3      Range low        840m
+  4      Speed            1664m/s
+  5      Length           607mm
+  6      Diameter         25mm
+  7      L/D              24
+
+Literature review APS
+
+The second component of the literature review will be to understand
+current and emerging APS capabilities. The review will focus on
+identifying the characteristics relevant to the research platform:
+sensors and effectors, whilst also identifying methods by which APS
+could defeat LRPs. It will aim to define the most relevant sub-systems
+within each area, which will then be explored in greater detail within
+the later sections of the research. The lack of inherent guidance within
+an LRP denies the use of soft-kill systems as a defeat mechanism. Whilst
+it is accepted that certain capabilities such as Laser Directed Energy
+Weapons (LDEW) could be employed pre-emptively to defeat sighting
+systems. These methods, however, do not contribute to the defeat of the
+projectile and therefore sit outside the scope of the research.
+
+Review of current active protection methods
+
+The list of APS reviewed within this section is not exhaustive, however
+the research aims to analyse the different sensor and effectors
+combinations used to generate an effect. It must also be noted that the
+emerging nature of many modern APS, often makes the classification of
+their composition above the level of this paper.
+
+Table ‎2‑5 List of reviewed APS
+
+  Ser.   Name                                                         Effector                                                       Sensor
+  ------ ------------------------------------------------------------ -------------------------------------------------------------- ---------------------------------------------------------------------------
+  1      Rheinmetall Active Defence System. (Jane’s Defence, 2019h)   Non fragmentary blast                                          Phased Array Radar pre-warner and IR collision detection.
+  2      Rafael Trophy (Keller, 2018).                                Multiple Explosively Formed Projectiles (MEFP) (Rocco, 2018)   Phased Array Doppler Radar (Hazell, 2016).
+  3.     IMI Iron Fist (Jane’s Defence, 2019i).                       Explosive charge interceptors.                                 Phased Array Radar pre-warner and IR collision detection (Allison, 2018).
+  4.     KBM Arena (Hazell, 2016).                                    Directed Fragmentation Grenade (Jane’s Defence, 2019j)         Constant scan radar (Meyer, 1998b)
+
+Rheinmetall ADS
+
+The Rheinmetall ADS (Jane’s Defence, 2019h) was first tested in 2011 on
+a Fuchs 8x8. It has been designed to defeat missile and rocket systems
+and as such uses short range detectors and a non-fragmentary effector.
+The sensors are two staged, an initial detection by passive radar at
+10-35m from the platform, then a collision sensor by an IR detector
+about 2m from the platform. This provides the platform with 200-80ms
+from detection and between 20-15ms for collision. Whilst this processing
+time is extremely fast, it is insufficient for the defeat of an LRP,
+which could travel at over 6.5x the speed. The effector is based on a
+shape-charge, which is though not to include a liner, thus reducing
+collateral damage, which is a key sales point given the system is
+designed for lighter platforms (Rheinmetall Defence, 2019). The shape
+charge initiates a blast wave which in-turn defeats the projectile. As
+with the sensor system, the effector is insufficient for an LRP, it is
+unlikely that the effector would defeat in time or have the power, if it
+did, to defeat it.
+
+Raphael Trophy
+
+The Raphael Trophy system is a widely used system, integrated onto the
+Israeli Merkava Tank and being developed for the US Abrams M1A2 (Keller,
+2018). The system aims to defeat ATGMs and rockets upto 30m away through
+the use of a phased array doppler radar, similar to the ADS (Hazell,
+2016). The MEFPs are mounted on either one or two gimballed launchers
+(Rocco, 2018). The advantage of EFP effectors, is the large range at
+which they can affect a projectile. In this system the MEFPs are closely
+grouped and as such they could be used to induce dispersion, accounting
+for inaccuracies or high velocity rounds. The gimballed launcher, whilst
+reducing the weight of the system does generate additional latency into
+the engagement sequence. For the effector to be able to acquire the
+target and achieve coincidence, the threat will need to be detected
+significantly further away that the ADS currently does.
+
+Israeli Military Industries (IMI) Iron Fist
+
+The IMI Iron Fist system is a combination of the two former systems. It
+employs a twin phased sensor system, radar to detect and passive IR to
+initiate, claiming a reaction time of between 300-350ms (Jane’s Defence,
+2019i). It then uses a small interceptor projectile, seen at Figure
+‎2‑7, which is launched and then detonated (Allison, 2018) to form an
+explosive shock at a distance of approximately 15m from the platform.
+The manufacturer claims that the system is capable of defeating Kinetic
+Energy (KE) rounds (General Dynamics OTS, 2011). The specific round is
+not explicitly stated, and whilst Jane’s Defence has claimed to see the
+effector defeat a KE round, the full detect-effect has not been
+demonstrated against this threat. If the 350ms reaction time is correct,
+the baseline projectile from this research would need to be detected at
+a range greater than 582m. Although this is technically feasible, the
+use of radar to permanently scan at this range would generate a very
+large signature for the platform, therefore, even if it system is
+capable of defeating a KE round, it may not be practical to do so.
+
+[]
+
+  Figure ‎2‑7 Iron Fist projectile pictured just before detonation in
+  the defeat of an RPG-7 projectile. (General Dynamics OTS, 2011).
+
+KBM Arena
+
+The KBM Arena system is one of the oldest systems in this review,
+originally developed in 1997, but was last updated in 2010 (Jane’s
+Defence, 2019j). It uses a continuous scan radar mounted prominently on
+the centre of the turret. It detects targets up to 50m away (Meyer,
+1998b) and between 70 and 700m/s (Jane’s Defence, 2019j). The effector
+is a fragmentation grenade which is launched up to a range of 1.5m from
+the platform. At which it will detonate, forming a cone of fragmentation
+in the direction of the target. Projectiles are usually engaged at 4m
+from the platform, but despite this close range, the danger area for
+fragmentation is between 20 and 30m (Meyer, 1998b), as a result of the
+cone angle of the fragmentation. This makes the system difficult to
+operate in the vicinity of dismounts or urban areas.
+
+APS Analysis
+
+This selection of current APS were chosen as they each use a different
+sensor/effector combination to defeat their target. The next section
+focuses on the characteristics and subsequent analysis of some of these
+key combinations and components, defining the implications of particular
+combinations on the engagement itself.
+
+Twinned sensor array
+
+Both ADS and Iron Fist (Allison, 2018) use two layered sensor types to
+identify a target/initiate the system and then initiate the effector,
+respectively. This type of system adds an element of redundancy and also
+ensures that the system is only fully activated when a projectile is
+detected (Rheinmetall Defence, 2019). The final stage detector is
+particularly interesting, it removes the requirement for an accurate
+Projectile Intercept Point (PIP) to be calculated from the first stage
+sensor. In theory this should reduce processing time and therefore the
+reaction time, as shown by the ADS, but not necessarily the Iron Fist.
+It must however be noted that the effector for Iron Fist does not
+necessitate a short reaction time in the same way as ADS. This sensor
+array and not using an accurate PIP may be the reason why both ADS and
+Iron Fist have used an area rather than precision effector, such as an
+EFP.
+
+Engaging at reach
+
+Trophy (Keller, 2018) and Iron Fist both aim to engage the target at
+beyond 10m, and up to 30m for Trophy, as shown in Figure ‎2‑8. This
+additional stand-off would deny the remnants of a shaped charge from
+striking the target, even if the jet was unhindered by the defeat
+mechanism (Miyoshi et al., 2005), this is likely to be even more
+effective against slower projectiles such as fragmentation. As a result,
+it can be seen that this stand-off increases the effectiveness of the
+defeat mechanism. The range has an additional effect, it provides the
+distance required to use yaw induction as a method of projectile defeat
+(Rocco, 2018). This additional distance, whilst affording improved
+platform protection, does significantly increase the collateral
+implications of the system. The implication of the MEFP effector
+launching to 30m from the platform, denies its use in complex
+environments, such as the urban, or on vehicles designed to operate in
+the vicinity of dismounted troops, such as Armoured Personnel Carriers
+(APCs). Arena (Jane’s Defence, 2019j) also suffers from this
+implication, although its effects range is up to 4m, the choice of a
+fragmentation effector creates a very large danger area around the
+platform. This significantly limits the systems utility and flexibility.
+
+[]
+
+Figure ‎2‑8 Diagram showing a comparison of engagement ranges between
+the aforementioned systems
+
+Residual impact
+
+The ADS demonstrates a system which requires a significant amount of
+residual armour (Rocco, 2018). Whilst developing a system with low
+collateral damage and a minimal defeat range it will still detonate the
+projectile within 2m of the platform (Rheinmetall Defence, 2019).
+Without sufficient passive armour, the projectile will still cause
+significant damage. Despite being marketed towards the light vehicle
+market, this denies this system to a large proportion of those vehicles.
+This is a key justification for the separation of APS and the target
+platform, the greater the separation the less the effects on the
+protected vehicle.
+
+Multiple engagements
+
+One area of concern within the systems that have been reviewed is the
+ability to conduct multiple engagements and the ability to conduct them
+sequentially in close proximity. One of the key developments in
+defeating APS has been to launch two projectiles in quick succession
+(Mizokami, 2018), a system such as Arena, with its 2.4s re-engagement
+time (Meyer, 1998a) would be unable to mitigate this threat. Whilst this
+is focussed primarily on the defeat of ATGMs, if an LRP defeating APS
+was developed, this could also be a simple and effective countermeasure.
+Similarly systems such as Iron Fist only have the limited number of
+projectiles before they must be reloaded, the Iron Fist Light system
+only carries two projectiles on each side of the platform, despite
+weighing 325kg (General Dynamics OTS, 2011). The system weight may
+justify why the number of projectiles is so limited, especially given
+its intent to be mounted on lighter platforms. With the addition of
+updated passive armour, the active system platforms are often operating
+well above their initial combat weight. To some degree, this can be
+mitigated by sacrificing some of the passive armour for active, but
+whilst the span of threats still involves kinetic energy rounds, an
+element of passive armour will have to remain. Space may also be a
+factor as the number of places where the launcher can be placed, and not
+impact on other systems, is limited (see Figure ‎2‑9.)
+
+[A picture containing object, telescope, sky, outdoor Description
+automatically generated] [A picture containing vehicle, transport, boat,
+ship Description automatically generated]
+
+Figure ‎2‑9 Iron Fist Light Launcher module (General Dynamics OTS,
+2011).
+
+Target set
+
+It is important to acknowledge that all of the systems reviewed, with
+the exception of Iron Fist, have been designed to defeat ATGM threats.
+With Iron Fist, there is still some discussion as to the definition of
+‘Kinetic Round’ used by the company (General Dynamics OTS, 2011). A
+specific definition of the target projectile doesn’t exist within their
+open source literature, but it does not implicitly define the kinetic
+energy round as an LRP, this ambiguity could be deliberate to favour a
+marketing strategy. Whilst the effector range and method could be
+feasible, there no evidence to prove that the system processing time is
+sufficient. As a result, there is no conclusive evidence to suggest that
+any of the systems above could defeat an LRP.
+
+LRP defeat methods
+
+Whilst the APS’s reviewed within this paper did not present a conclusive
+method of defeating the LRP, there has been limited research into
+methods of defeating the projectile. This section will review the two
+key approaches: fragmentation and yaw.
+
+Fragmentation
+
+Liden, 2010 studies the interaction between penetrators and moving
+armour components specifically focussing on LRPs. One of the most
+pertinent experiments looked at the interaction between an LRP and a
+moving plate and identified two findings relevant to this study. The
+first was that fragmentation occurs best when there is an interaction
+with the nose and side of the projectile. From this it could be inferred
+that a plate, such as in Explosive Reactive Armour (ERA), is more
+effective than a single impact point. This can be further developed by
+identifying that if single point projectiles are used, multiples of
+these might be required to achieve fragmentation. This is best
+demonstrated in Figure ‎2‑10, where the greatest level of stress is seen
+when the side of the projectile interacts with the plate.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎2‑10 Sequences of damage plot during the interaction with a
+forward/backwards moving plate (Liden, 2010)
+
+The second and arguably most relevant factor was that the propensity for
+the LRP to fragment was significantly increased when a plate moving in
+the same direction as the LRP, rather than directly against it (Liden,
+2010). This is largely the result of a delay in the interaction of the
+plate and the side of the projectile, inducing even greater stress, than
+immediately interacting with the side. Whilst this theory cannot apply
+to conventional APS, the concept in this paper could utilise its
+separation from the platform to increase the fragmentation probability
+by matching effector and projectile direction.
+
+In a later study by the same author(Liden, Helte and Andersson, 2016) it
+was concluded that the break up tendency of an LRP was primarily related
+to the shearing force generated by the sliding interaction between the
+penetrator and the plate. This has a difficult application for APS, as
+sliding plates may be a difficult effector to implement due to size and
+weight. To follow on from this work Rocco et al 2018 further developed
+this concept to define how a single point of interaction could generate
+fragmentation of an LRP (Rocco, 2018). The paper estimated that it would
+take 3300J of energy to defeat a 25.4mm diameter LRP. It could also be
+seen that all the impacts during the experiment were central to the
+projectile, which may be difficult to achieve outside of laboratory
+conditions, nonetheless guarantee it as a method of defeat.
+
+Yaw induction
+
+During the research by Rocco it was also identified that although the
+rod did not consistently fracture, it did consistently move within its
+jig (Rocco, 2018). Yaw rate was measured throughout the experiment to
+understand the residual effects of the projectile, but actually
+demonstrated a defeat mechanism in its own right. This claim in
+supported by other research, most notably by Liden and Helte who
+recommended deflection as an effective alternative to fragmentation
+(Lidén and Helte, 2016). When analysed, it can be seen that an increase
+in kinetic energy does not significantly increase the yaw rate, until
+the point at which fragmentation occurs. Secondly, the yaw angle
+increases exponentially with distance travelled. Table ‎2‑6 shows the
+data generated from the experiments.
+
+Table ‎2‑6 Yaw angle at certain distances (Rocco, 2018)
+
+[]
+
+When modelled against a platform, it was shown that a non-fragmented
+projectile could avoid a 2.5m high vehicle, if it is engaged at 7m from
+the platform or 2.75m if the projectile does fragment. Whilst it does
+demonstrate a method of defeating the projectile, this is based on a
+constant value for yaw rate. The value used for yaw in this calculation
+is an average; in order to mitigate this the data has been further
+modelled into Figure ‎2‑11. This model demonstrates the cumulative
+distance at which the projectile would have yawed, at set ranges from
+the vehicle. This will ensure that the optimum engagement distance can
+be established for the engagement of an LRP using yaw as a defeat
+mechanism. It is important to note that when the data is represented in
+this manner, cumulatively, rather than an average yaw angle, the
+intercept range slightly changes. For the projectile to yaw enough to
+avoid a platform 2.5m tall, the projectile must be intercepted atleast
+9m from the platform, not the 7m previously stated. This is the result
+of the polynomial rather than linear curve.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎2‑11 Rocco yaw angle data plotted cumulatively
+
+A key benefit of separating the APS and the platform is the ability to
+engage a projectile at a much greater distance than current systems can.
+To understand how greater distances than within the current data-set
+might affect the yaw potential, a polynomial regression machine learning
+algorithm was used. This model suggests to have a very low probability
+of error, however, the small data-set could make this deceptively
+accurate. The model also assumes that the projectile is impacted
+centrally and that there are no further effects on the aerodynamics of
+the LRP. This model is shown in Figure ‎2‑12, the intercept range and
+the yaw distance are exponentially related. Therefore, a small increase
+in range could generate a significant increase in protection, but a too
+greater increase could mean the projectile generates additional
+collateral damage implications. The further that the projectile yaws
+from its target, the greater the likelihood that the projectile will
+interact with another entity in the battlespace. If the projectile yaws
+laterally this could interact with a lighter vehicle, which it may still
+penetrate. Perhaps more concerning would be a vertical yaw, which might
+cause an interaction with an aircraft, especially a helicopter. The yaw
+data may be highly relevant when identifying feasible positions for the
+APS platform, so that it is able to protect its objective, without
+causing harm to other platforms or personnel. Whilst this poses a
+significant challenge for the use of yaw as a defeat method, it still
+presents the most reliable method of LRP defeat with an active system.
+Methods of mitigating this area will be analysed in greater detail,
+later sections of the research.
+
+[A close up of a device Description automatically generated]
+
+Figure ‎2‑12 Yaw angle prediction using polynomial regression
+
+Concept Requirements
+
+To summarise this literature review, a number of system requirements for
+the APS platform can be developed. These requirements combine the
+effects of the constraints identified within this section. They form a
+baseline which defines the parameters of the experimentation within the
+following sections. Similarly, they will act as a measure of
+effectiveness for the concept itself, identifying if it remains feasible
+as the research develops. Table ‎2‑7 compiles a list of the concept
+requirements.
+
+Table ‎2‑7 Summary of Concept Requirements
+
+  No   Requirement
+  ---- -----------------------------------------------------------------------------------------------------------------------------------------------
+  1.   The system should seek to use yaw rather than fragmentation as a defeat method.
+  2.   The system should seek to defeat LRPs fired from 840m, 1550m and 1990m to replicate the most likely ranges.
+  3.   The system must impact the incoming projectile at greater than 9m from the platform, thus generating sufficient yaw to protect the objective.
+  4.   The system must be able to defeat a projectile travelling at 1664m/s.
+  5.   The system must mitigate or account for the effects of Aerodynamic Jump on the trajectory of an LRP.
+  6.   The effector must be able to transfer >3300J of energy to the projectile.
+
+DETECT THE THREAT
+
+This section of the paper will focus on defining the possible methods
+that the platform could use to detect, recognise and predict the
+flightpath of threats to the protected platform. Whilst this component
+does not directly relate to the effector interaction, the primary focus
+of this paper, it is fundamental to understanding the parameters which
+enable the effector to operate. A critical factor will be that of time.
+The minimum time required to predict an intercept point between effector
+and projectile will directly relate to the minimum engagement range for
+which the APS will protect. With a projectile capable of completing a
+mean range engagement in 0.93s, this will be challenging. This section
+will initially establish the requirements, then assess potential sensor
+options before defining methods of processing to minimise the data
+processing time. The outcome of the section will be a model which can be
+used to form the baseline for the effector research.
+
+Sensor Requirements
+
+The requirements for this system initially seem very similar to
+in-service APS, as examined in Section ‎2.2. However, by defining the
+LRP as the primary target set, the system has a far more complex demand.
+The first challenge is the projectile itself. Its high-speed, results in
+an extremely short time for system to both identify and process a
+threat. The small diameter of the projectile, its lack of guidance and
+kinetic propulsion, means there is unlikely to be much projectile
+signature after the initial consequences of firing.
+
+The second challenge is the defeat mechanism, in order to induce yaw
+effectively it will require significant energy being applied directly to
+the projectile. David Rocco predicted that the energy required to induce
+this yaw was 3300J (Rocco, 2018). For context, to generate 3300J of
+kinetic energy, a 2kg object to be travelling at 127mph. In addition, if
+the projectile must be struck from at least 9m away from the platform
+then the interception point must either be very accurate, or the
+effector must be broad. Trophy APS (Keller, 2018) already aims to engage
+at 30m from the platform, however, the ATGM target set it faces is
+significantly larger and slower than an LRP. This means, the APS
+solution used by Trophy cannot correlate directly.
+
+A final, and often overlooked challenge, is the impact of an active
+sensor on the signature of the platform. Minimising this through the use
+of passive systems where possible, will ensure that the platform does
+not inadvertently decrease the survivability of the protectee by
+emitting a unique signature. In light of these challenges, the system
+sensors have three key requirements:
+
+-   Detect at the greatest range possible, therefore providing maximum
+    time and capitalising on the firing signature.
+
+-   Speed
+
+-   Accuracy
+
+Overall, the system sensors are required to achieve three separate tasks
+which will provide sufficient data to enable the effector interception.
+The tasks are: track the protectee, detect the threat and track the
+threat. A demonstration of these is shown in Figure ‎3‑1.
+
+[]
+
+Figure ‎3‑1 Engagement sequence
+
+ Track the Protectee
+
+This system could be used to defend a single vehicle or a small group,
+if co-located. For the purpose of the paper, the protectee will be
+defined as a single vehicle, this will prove its feasibility against the
+simpler challenge, which can then be further developed into multiple
+vehicles. The platform has to understand its position in relation to the
+protected vehicle. This enables the system to determine whether an
+engagement is targeting its protectee and that it positioned correctly
+to provide the required protection. This type of control is already in
+existence with follow-me mode on commercial UAS (Mao et al., 2017).
+Operation in air, however, rather than land is simpler as inherently it
+has infinite degrees of freedom. This type of guidance has however been
+demonstrated through source seeking with three degrees of freedom
+(Paliotta, Belleter and Pettersen, 2015) and through the use of image
+distance processing angular velocity calculation (Poonawala, Satici and
+Spong, 2013). There are multiple sensor options, which provide the data
+which enables this calculation. This task is different to the other two
+and therefore its requirements are based upon; the possible separation
+between platform and protectee; then the ability to generate accurate
+relative locations. These requirements will be used to assess three
+possible options.
+
+IR Beacons
+
+IR beacons are commonly used by leading ‘follow me’ UAS and are proved
+to be highly effective (Amraii et al., 2014). An IR beacon would
+however, need to transmit routinely and thus may present a very unique
+signature that could be clearly identified by other IR scanners.
+Similarly, an IR beacon relies upon line of sight which will limit the
+range in which the two platforms can separate. It is therefore assessed
+that an IR beacon would not be appropriate for this application.
+
+Visual detection
+
+Advances in image processing using Artificial Neural Networks have
+demonstrated that they are capable of AFV recognition from Satellite or
+Synthetic Aperture Radar images (Abd Ghani and Yosri, 2011). The
+algorithms are capable of subtracting the background and then analysing
+a platform shape through a wireframe reconstruction, enabling its
+identity to be determined (Hadi, Sulong and George, 2014). A drawback of
+machine learning is the time taken to train an algorithm. However, once
+the algorithm has been trained, detection could be virtually
+instantaneous (Herwig and Schalkoff, 2015) and has been noted to have a
+90% success rate (Vaitheeswaran, Bharath and Gokul, 2014). Difficulty of
+this approach arises if the platform had to dynamically change the
+protectee to one not within the training data-set. This could be
+overcome by the simple application of a unique identifier, such as a
+Quick Recognition (QR) code (Gu and Zhang, 2011), which is already
+common place in most modern mobile phones. A similar code could be
+placed on any platform that the system would need to defend, noting that
+the image processing can account for tilt or obliquity. The uniformed
+size of the QR code would also serve to provide the range of the vehicle
+using a stadiometric calculation, though its accuracy would have to be
+tested. Similarly, if multiple codes were used to denote the different
+sides of a platform, then this could be used to triangulate its
+orientation. The benefit of image processing is that it is inherently
+passive and therefore generates no signature, however, if it was to use
+near-IR sensor the QR codes would be required to generate a small
+signature. Whilst again this presents a viable option for developing the
+correct range and angle, it is by definition reliant upon line-of-sight.
+
+Differential Global Positional Satellite (DGPS) and Inertial Measurement Unit (IMU). 
+
+To mitigate the complications of line of sight, some systems, such as
+the Packbot, have been equipped with a DGPS (Borenstein et al., 2010).
+This enables the Packbot to follow its leader through a breadcrumb trail
+left by the leader’s GPS. The GPS method prevents the issue of line of
+sight and presents a method of enabling the two platforms to manoeuvre
+with more freedom. However, traditional GPS is prone to variation, to
+mitigate this DGPS can be used, by providing an initial known point the
+error within the GPS can be minimised (Chivers, 2019). This is designed
+to calibrate the GPS to a known point, which may not always be feasible
+on a dynamic battlefield. If the platform was instead calibrated when
+located with the protectee, the error could be mutually offset, thus
+improving accuracy. Another complication is the prevalence of GPS denial
+as peer adversaries continue to invest in the technology (Watling and
+Bronk, 2019). Denial is commonly countered with an IMU, however if
+uncorrected these can be vulnerable to drift as shown in Figure ‎3‑2
+(Borenstein et al., 2010). A visual reference systems has been
+successful at mitigating this error (Kim and Golnaraghi, 2004). Whilst
+image processing was not the method used, it demonstrates that visual
+correlation is possible. This demonstrates that IMU and image processing
+complement each other; when combined they may enable a very accurate and
+resilient method of tracking the protectee.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎3‑2 The recorded paths of a leader-follower, displaying both a
+corrected and an uncorrected IMU, highlighting the impact of IMU drift.
+(Borenstein et al., 2010)
+
+No single sensor method presented here gives a full solution to the
+problem, as such layering sensors would produce the most reliable
+outcome. As such, image processing, DGPS and IMU presents a
+complimentary and effective method of leader-follower control. Image
+processing generates accurate line of sight data; DGPS then presents a
+solution for operating beyond visual range, in which redundancy is then
+generated by the IMU. Ultimately using a system like this means that the
+platform can generate angle and range to a sufficient accuracy, whilst
+not imposing any manoeuvre restrictions on either platform. Technically,
+its feasibility can be demonstrated by examining the MBDA MMP, which
+incorporates an IMU (MBDA Missile Systems, 2018), integration into such
+a small package would suggest that weight and power concerns will not be
+a factor. This will maximise available engagement time against an LRP.
+
+Detect the Threat. 
+
+Sensing the projectile is broken into two phases, the first of which is
+the detection of the projectile launch. This phase is enduring
+throughout the deployment of the platform and concludes at the point a
+direct threat to the protectee is identified. The sensor system must
+both identify a potential launch and then match the trajectory to the
+protected platforms location, thus confirming its threat classification,
+not a separate event. The sensor, however, does not need to be able to
+generate an intercept point, this is conducted in the tracking phase and
+enables more latitude in its accuracy. This phase presents two clear
+challenges. Firstly, to generate sufficient time to process the threat,
+the target has to be detected at the greatest possible range, up to
+1990m. Secondly, the persistent nature of the sensor requires it to be
+passive as not to generate permanent signature. As a result, there are
+two options, image processing and passive radar.
+
+ Image Processing
+
+As with the Section ‎3.1.1.2, the use of machine learning algorithms
+could provide an effective, passive method of detecting the threat.
+There are two possible methods of detection using these means:
+
+-   Method 1: Detect the signature around the shot and then relate it to
+    the orientation of the firing platform.
+
+-   Method 2: Compare two image frames of the projectile and correlate
+    the direction of the projectile to the location of the protected
+    platform.
+
+Method 1 would be the quickest and simplest method and would generate a
+sufficient enough output. The method would rely on some assumptions:
+that the barrel is central to the platform, the platform type is within
+the dataset and the platform is in the line of sight. The first two
+assumptions are easily satisfied as currently all LRPs are fired from a
+similar platform, a tank. The final assumption is more challenging,
+although the barrel and sight must be in line of sight, other
+environmental clutter may interfere with the identification of the
+platform. Figure ‎3‑3 shows how this method could detect, without the
+requirement to identify the platform. If the centre of mass of the shot
+(green line) sits central to the platform, or shot signature, within a
+margin of error (white shade) then it could be considered a viable
+threat. If the exposed area is only partially visible, it could cause a
+discrepancy, but this could be mitigated by using clutter removal
+algorithms (Hadi, Sulong and George, 2014).
+
+[A picture containing train Description automatically generated][A
+picture containing object Description automatically generated]
+
+Figure ‎3‑3 Visual representation of method 1 against the platform and
+shot signature.
+
+All current LRPs rely upon discarding their sabot, generating a
+significant and very unique signature. Due to its symmetric nature it
+could be used to define the threat direction, as seen in Figure ‎3‑4.
+Method 2 would use this characteristic to identify a threat. If the
+projectile is being fired towards the protected platform the petals
+would be symmetrically distributed. It has been identified that although
+sabot separation starts upon the projectile leaving the barrel, it takes
+4.9ms for the separation to be fully achieved (Cayzac, Carette and
+Alziary de Roquefort, 2001). The time taken for an image to be processed
+is entirely dependent upon the algorithm selected and the supporting
+power. Some algorithms have claimed to process 650 images/second and
+have upwards of 90% accuracy (De Albuquerque et al., 2012). In effect
+this is real-time processing and if it is achieved it would enable the
+system to process images from multiple sensors simultaneously, thus
+enabling a broad arc of observation. The other advantage to machine
+learning is that the model will grow and adapt as engagements are
+experienced. This could mean that the algorithm may identify additional
+consequences of firing to trigger detection. This method assumes that
+the firing sequence is within line of sight, but given the dumb and
+direct nature of an LRP, this is a reasonable assumption
+
+[]
+
+Figure ‎3‑4 Directional view of an LRP sabot discarding (Huang, Wessam
+and Chen, 2014)
+
+Passive Radar
+
+Passive radar uses echoes existing radiation within an environment to
+detect a moving object by detecting its Doppler shift. Although the
+technology is still developing, it presents an affordable and reliable
+method of radar detection without the emission signature of a
+conventional system (Limnaios et al., 2019). Trial data is primarily
+based around the air domain, but some trials have been conducted
+demonstrating that a target travelling at 0.5mach can be detected at
+1.1km (Limnaios et al., 2019), whilst this does not meet the parameters
+required yet, it shows promise. One area of development for passive
+radars is in clutter reduction (Colone, Cardinali and Lombardo, 2006),
+which could significantly increase its performance in the ground domain.
+One drawback to passive radar is that it is inherently reliant upon
+external signals to generate detections, such as phone or radio signals.
+However, it can be assumed that the modern battlefield will still
+contain a high level of data transmissions such as Radio Frequency (RF)
+transmissions, which could be utilised (Limnaios et al., 2019).
+Furthermore, another area of passive radar research are methods to
+maximise the existing signals (Karthik and Blum, 2018). The signal
+generator does add an additional factor into the time calculation, but
+given the signal will still travel at the speed of light it is highly
+unlikely that the increase in time will have any impact on the detection
+of a projectile. The lack of signature attributed to passive radar means
+that, if integrated, the platform could detect projectiles entirely
+passively. This is, however, dependent upon a relevant and available
+signal, which cannot always be guaranteed, especially when operating
+within a contested EMS. This paper recognises that in order to fully
+assess the viability of passive radar, much greater detail must be
+understood, this detail is held at a classification out of scope for
+this paper. Using the known statistics of passive radar, as a sensor it
+may be better suited to a closer range tracking of a threat, rather than
+detection.
+
+Modelling
+
+For the purpose of modelling we will use the greatest time that we have
+examined, being the use of method 2 for image processing. This assumes
+that the other two approaches would take less time. This requires 4.9ms
+for separation to complete and 0.15ms for processing to occur, with
+rounding this generates a 5.1ms time for detection. The diagram at
+Figure ‎3‑5 shows the time available for engagements at each of the
+chosen ranges, denoted by the solid red, green and blue lines. The light
+blue shaded area details the detection component of the sequence.
+
+[]
+
+Figure ‎3‑5 Engagement sequence model showing engagement time (s)[2]
+engagements at each of the chosen ranges (red, green and blue lines
+respectively), the detection time is highlighted by the light blue
+shaded area.
+
+Track the Threat. 
+
+The final stage of the sensor sequence is to track the threat. This is
+the most complex stage of the process as it needs to enable the
+processor to deduce an accurate intercept point for the effector. This
+section will evaluate the requirements for the system and evaluate the
+possible methods of meeting them. It must be acknowledged that the
+sensor and effector in this situation are inextricably linked, as a
+result multiple options will be taken forward and refined against
+effectors. Unlike detecting the threat, in Section ‎3.1.2, tracking the
+threat is a discreet activity and therefore does not need to be
+constrained by the limits of a passive system. To enable the system to
+effectively track a threat the sensor will need to achieve the following
+criteria which all of the sensors will be judged against:
+
+-   Ability to accurately generate the data required to enable the
+    system to define the impact point. This would require the following
+    metrics: time from detection to interception (∂), horizontal
+    distance (x) and elevation angle (α) as displayed in the diagram at
+    Figure ‎3‑6.
+
+-   Be capable of initiating (if required), then accurately generating
+    the above metrics within enough time to enable an effector to
+    interact with the projectile, whilst it remains greater than 9m from
+    the intended target. Using the model at Figure ‎3‑5, at the three
+    test distances the sensors have only 0.448s, 0.875s and 1.139s
+    respectively. These times do not account for the effector time of
+    flight, meaning they may reduce.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎3‑6 Interception calculation data requirement diagram
+
+The requirement for a passive system was constraining, by removing this,
+the opportunities for sensors have broadened. As stated, passive radar
+may be suited better to track than detect, therefore this section
+examines three additional options. The ultimate aim is to assess the
+sensors against the criteria previously established and define a sample
+time that can be added to the model. This will prove the feasibility of
+the concept at each range and the time remaining will support the
+selection of the effector.
+
+Radar.
+
+Millimetric wave radar (MWR) is often used within APS as its low
+wavelength supports an accurate identification of the threat (Hazell,
+2016). Its high resolution has been demonstrated to be effective against
+systems with a low radar cross section, such as micro-Unmanned Air
+Vehicles (UAVs) (Ezuma et al., 2019) Rheinmetall ADS detects a threat
+using MWR up to 35m from the platform and engages at 2m (Rheinmetall
+Defence, 2019). If assumed that the APS is designed to target ATGMs
+travelling at ~250m/s then the maximum reaction time can be calculated
+as 132ms. If this reaction time is taken as a processing constant, when
+applied to an LRP, then the projectile would need to be detected at a
+minimum of 220m from the target. A Frequency Modulated Continuous Wave
+radar at 57-64GHz wave was used to detect a 7.62mm round travelling at
+850m/s, at 200m from the sensor (Shoykhetbrod, Hommes and Pohl, 2014).
+Whilst the speed is only half the test speed of the LRP model, the
+increase in size and the inclusion of fins would suggest the LRP has a
+higher Radar Cross Section when compared to the 7.62 round (Zaman and
+Matin, 2012). As a result of this, this paper will assume MWR to be a
+technically viable option. One significant drawback of MWR is that
+weather has a significant impact on its performance, if used in a fog
+with 0.5m visibility, the attenuation of the radar would be 10%, 3db out
+of 30db, (Golovachev et al., 2018) this could be extrapolated directly
+to define the degree of accuracy. Given the time and speed that this
+system would have to operate within this inaccuracy may render it
+ineffective. So, although MWR may be technically feasible, its
+attenuation may make it practically unfeasible.
+
+Other radar wavelengths may however, present a viable method of
+detection. The system could use any radar system with a wavelength less
+than the diameter of the projectile. If, for example, a 15mm wavelength
+was chosen, this would increase the range, reduce attenuation and still
+be capable of detecting the projectile. By nature, a radar will generate
+a significant signature. The radar range equation at
+
+Equation ‎3‑1 demonstrates that wavelength, antenna gain, power and
+target radar-cross section (RCS) are directly related to range. The
+target RCS is small, so the other variables must compensate. As the
+wavelength and power increases, so will its vulnerability to detection.
+This does not inherently prevent the use of radar, but it must be
+balanced with the power and wavelength selected. If radar is used, a gap
+in long range projectile tracking may be an acceptable sacrifice to
+minimise the signature.
+
+$$R_{\text{Max}} = \ \sqrt[4]{\frac{P_{\text{s\ }}G^{2}\lambda^{2}\sigma}{P_{e_{\min}}(4\pi)^{3}}}$$
+
+(Wolff, 2020)
+
+  Equation ‑ Radar range equation
+
+R_(Max) = maximum range
+
+P_(s ) = transmitted power
+
+G= antenna gain
+
+λ = wavelength
+
+σ = radar cross-section [m²]
+
+P_(e_(min) )= min received power
+
+Image Processing.
+
+Unlike the previous uses of image processing, accurately predicting the
+projectile path is more challenging. The diameter of the actual
+projectile, between 20-30mm, makes it very difficult to distinguish the
+projectile from the background after the initial signature of firing. As
+a result, passive infra-red may present a better input source. The
+second challenge is generating accurate predicted locations from an
+image, which inherently lacks the context of location. One study (Ullah,
+Song and Kirubarajan, 2015) has trialled the use of twinned sensors,
+which are separated enough to generate a location by triangulation, as
+shown in Figure ‎3‑7.
+
+[A picture containing sky Description automatically generated]
+
+Figure ‎3‑7 Azimuth and elevation triangulation using multiple IR
+sensors (Ullah, Song and Kirubarajan, 2015)
+
+This method was able to detect a 1000m/s projectile at 1000m, though it
+is noted that the signal irradiance above 500m, made accurate
+predictions difficult. Therefore, given the small signature of the
+projectile it is likely that it would not be detected beyond this point.
+It could be assumed that this range may reduce, accounting for the
+additional projectile speed. The study also demonstrated that the
+distance between the two sensors had a significant impact on the
+accuracy of prediction. The accuracy improves exponentially as the
+distance increases from 1m to 4m (Ullah, Song and Kirubarajan, 2015).
+The platform, as a UGV, will be intentionally small it may therefore not
+be able to achieve more than a 2m separation, which may impact on its
+accuracy. The study does not detail to what accuracy the projectile was
+predicted, but given the identification is at ~500m, it may not be
+accurate enough to generate a sufficient intercept point for an effector
+such as an MEFP. However, its additional reach, over MWR, may provide
+enough time for effectors to slew to an approximate location. If layered
+with MWR, it would provide an effective and complimentary sequence.
+
+Laser.
+
+The final sensor is Light Detection and Ranging (LIDAR). Operating in a
+similar way to radar, light, often in the form of a laser, is emitted
+and the reflection is detection. LIDAR has become very popular in the
+field of autonomy, as a method of exteroceptive navigation (Papadakis,
+2013) and hazard detection (Pang et al., 2019). The area is often broken
+into Flash and Time of Flight (ToF) systems, in effect Flash systems
+take a snapshot and ToF systems consistently scan (Kim and Park, 2016).
+For target detection, a Flash system with a high refresh rate is
+probably best suited, as the cone of detection can be narrowed to a
+margin of error and the volume of data to analyse is minimised.
+Commercial Flash LIDAR, such as the LeddarTech Vu8 (Vu and Lidar, 2020)
+is capable of detecting to 215m with a refresh rate of 100hz. Whilst
+this paper accepts far better LIDAR capabilities exist, these figures
+establish a baseline. As a result of these figures, and LIDARs high
+granularity, it is suggested that LIDAR would make an effective
+short-range sensor, which would initiate the effector. Using the
+baseline speed, this would detect the projectile 130ms / 216m from
+impact.
+
+Developing the intercept point.
+
+All of the above sensors are able to generate azimuth and elevation data
+but fall short of generating an accurate interception point
+individually. Using a machine learning algorithm could enable the system
+to integrate the output of multiple sensors, maximising their individual
+benefits and mitigating the weaknesses. By combining the sensor outputs,
+the processor is able to pre-empt potential intercepts early in the
+projectiles flight and continually adjust accordingly. This has two
+distinct benefits:
+
+1.  Early prediction of an estimated intercept enables an effector
+    launcher to be aligned earlier in the firing process, with only
+    smaller adjustments being required as the prediction is improved.
+    This is especially relevant within this scenario where mechanical
+    servos may struggle to slew in time.
+
+2.  Minimise the error within intercept predictions by generating a
+    larger sample size, therefore accounting for flightpath or speed
+    variances, such as Aerodynamic Jump as described in Figure ‎2‑1.
+    This would not be possible using a speed, distance, time calculation
+    on its own.
+
+This could be achieved by taking data points generated by each sensor
+and combining them into the overall processing model. The
+characteristics of LRP, primarily trajectory, lack of guidance and
+consistent speed makes a simple linear regression algorithm (Eremenko
+and de Ponteves, 2020a) well suited to calculating a range and time
+intercept. A simple linear regression algorithm uses the relationship
+between multiple samples of a dependant and an independent variable to
+predict the unknown values by drawing a straight line between the values
+(Eremenko and de Ponteves, 2020a). By using a machine learning
+algorithm, the linear regression is able to adapt and retrain the model
+to reflect new data. As a result, as the number of datapoints increases
+so does the accuracy of the predictions. The difference between a time
+intercept calculation with a low number data points and one with a high
+number can be seen in Figure ‎3‑8, it displays a difference in algorithm
+predicted time with two and six data points respectively, and the number
+of datapoints makes the second graph significantly more accurate.
+
+[A screenshot of a cell phone Description automatically generated][A
+screenshot of a cell phone Description automatically generated]
+
+Figure ‎3‑8 Linear regression algorithm showing relationship between
+distance from the platform and time of flight. The blue shows a line of
+best fit around the datapoints, in red, the green shows predicted values
+calculated by linear regression. The left hand graph shows a zero
+intercept at ~0.88 and the right hand at ~1.03
+
+One challenge to using this method will be the generation of sufficient
+data points to produce an accurate model to ensure the effector
+interacts with the projectile. Layering sensors could provide small
+clusters of data, such as Figure ‎3‑9, rather than even spreads. As
+Figure ‎3‑9 shows, clustered datapoints still present a similar result
+to the even distribution in Figure ‎3‑8. Furthermore, a clustered set of
+data could retrain less frequently, ideally between layers. It should
+therefore be just as effective to layer sensors, but by requiring fewer
+adjustments to the model and therefore it will decrease processing time.
+
+[A close up of a mans face Description automatically generated]
+
+Figure ‎3‑9 Layered sensor data points
+
+In this configuration, each sensor could pass the azimuth and elevation
+to the next, including a basket of error to account for variations. This
+would ensure the next sensor is effectively aligned, minimising search
+time. The linear regression algorithm could then provide the time window
+that the sensor could detect the projectile, minimising power and
+signature. For the final sensor, the algorithm could then define a
+‘trip-wire’ distance, which would initiate the effector at the correct
+time to defeat the projectile. Therefore, by layering the sensors
+underneath a higher algorithm, the processor is able to reduce the
+intercept margin of error throughout the projectiles flight.
+
+Summary 
+
+The aim of this section was to establish the parameters within which an
+effector would be required to function, to intercept the projectile. It
+is tempting to suggest that all the sensors analysed within this
+section, should be utilised within the model, thus providing the most
+accurate interception point. However, the impact that would have on both
+power and processing would likely see a degradation in performance. But
+in order to balance power, signature and accuracy that the system
+requires three sensor types: a long-range passive scan, a medium range
+track and a short range detect. This paper accepts that in order to
+retain its security classification, it may not have the most accurate
+and current figures for specific sensors. However, it also assumes that
+these figures would only increase the viability of the model, rather
+than decrease it. In addition, should any future work see it fit to
+increase the security classification, the model used in this development
+could easily be run with other data sets. In conclusion, there are
+effectively two models to take forward to the next section: an active
+model (Figure ‎3‑10) which is capable of generating significantly more
+time for the effector and maintains a permanent track of the projectile,
+or a passive model (Figure ‎3‑11) with limited signature and minimal
+power requirements.
+
+[]
+
+Figure ‎3‑10 Active sensors model: image processing, RADAR and LiDAR.
+
+[A close up of a piece of paper Description automatically generated]
+
+Figure ‎3‑11 Passive sensor model: Image Processing, passive RADAR and
+passive IR.
+
+ENGAGE THE THREAT
+
+Probability of hit
+
+Section 3 has established that it is technically feasible to detect an
+LRP and predict an intercept point. This section will initially seek to
+define the probability that an effector launched at that intercept
+point, would in fact hit the projectile (P_(Hit)). The derivation of
+P_(Hit) has two distinct components: the probability that the predicted
+intercept point will match the projectiles path in time and space
+(P_(PIP)); then if true the probability that the effector will hit the
+predicted intercept point (P_(Eff)). This probability can be drawn into
+a probability tree as below:
+
+This probability tree details the dependant nature of the variables. For
+example, the effector could not hit the projectile if the intercept
+point was not calculated correctly. This factor rules out a more robust
+calculation of probability such as a Bayesian calculation (Gupta, 2017).
+
+Assumptions
+
+In order to bound this section there are a number of assumptions which
+must be established, thus defining the scope for this probability, which
+is inevitably unable to be correct for all possible situations. These
+assumptions are:
+
+-   Factors related to weather will not impact the probability, due to
+    the high speed nature of the interaction.
+
+-   The engagement occurs at approximately sea-level, discounting the
+    impact of significant changes in pressure.
+
+-   Armoured platforms are able to accurately predict the flight path of
+    an LRP, however, the exact calculations are held above the
+    classification of this paper. This therefore means that it is
+    reasonable to assume the projectile flight path will be linear in
+    nature.
+
+-   The projectile was launched without abnormal external ballistic
+    disturbance and is therefore not suffering the effects of a
+    phenomenon such as aerodynamic jump, discussed in Section ‎2.1.1. As
+    is assumed that by this point in the projectiles flight, the
+    phenomenon would not be impacting upon trajectory.
+
+Define P_(PIP)
+
+The aim of this section is to develop a probability that the predicted
+intercept point accurately represents the location in time and space of
+the actual projectile. Therefore the outcome of this section will be a
+P_(PIP) with an associated confidence value of its accuracy.
+Establishing the parameters which could affect this calculation is a
+challenge within itself, however it will be assessed by looking at the
+accuracy of the sensed data, as per the active and passive models, then
+establishing the accuracy of the prediction algorithm itself. Figure
+‎4‑2 surmises the problem of P_(PIP), it displays the projectile in
+relation to its vertical and horizontal location (x, y respectively), it
+also displays the third dimension, time (z). The intercept point has to
+accurately predict all three dimensions. P_(Error) represents the
+potential variance in the projectiles flightpath and the interception
+point. The possible error for x, y axis, must be ±12mm and the z axis,
+±180μs.
+
+[A picture containing game Description automatically generated]
+
+Figure ‎4‑2 Intercept probability diagram
+
+This diagram is very helpful at defining the dependant variables which
+contribute to the size of P_(Error). Which is the result of sensed data
+accuracy, volume of data and the time between the sensor data and
+intercept. The P_(PIP) is actually formed of two independent components,
+P_(PIP(x, y)) and P_(PIP(z)). Which details the variance within the
+azimuth and elevation, then the variance in time. When combined this
+then presents the overall probability,
+
+X, Y Intercept Point
+
+In line with the scope, the factors which effect the projectile, will be
+narrowed somewhat, removing external factors such as weather effects. It
+must also be noted, for simplicity, the trajectory of the projectile
+will be linear. However, if trialled and it appeared that the trajectory
+was in-fact a low order polynomial curve, the P_(PIP(x, y)) would still
+be relevant. To enable this, the algorithm would need to change the
+regression type from linear to polynomial, which requires a minimum
+amount of code (Eremenko and de Ponteves, 2020b). This paper will look
+at two factors to define the possible error: the accuracy in the
+location generated by the sensors and accuracy of the algorithm to
+predict the time. This will generate the probability that the predicted
+x, y coordinates will contain the projectile. The output of this section
+will therefore be the ideal sensor accuracy and the number of data
+points to required to generate the highest feasible P_(PIP(x, y)).
+
+Sensor accuracy
+
+The first area to consider is the accuracy of the sensor, to generate
+the specific location of the projectile in the x, y axes. The
+granularity of a particular sensor will inherently decrease with range,
+for example, in a visual sensor the number of pixels, in which the
+object resides will decrease, using the Johnson criteria this could
+degrade it from identify to detect (Lumang, 2020). As such, it can be
+assumed that the closer sensors will generate the most accurate results
+and will therefore be used to determine the accuracy. The relationship
+between sensor range and the algorithm processing time are closely
+linked. The sensor range must be able to generate sufficient data points
+to achieve an accurate prediction on the linear algorithm, whilst also
+having sufficient time to process the prediction. The most significant
+contributor to error will be the detection wavelength itself; a radar
+with a 15mm wavelength could present a variance of up to 30mm for the
+x, y axes. As a wavelength greater than the diameter of the projectile
+would not be capable of detecting it, the model will assume the total
+combined range of sensor variance to be between 1mm and 25mm.
+
+Algorithm accuracy
+
+The accuracy of the linear regression algorithm is entirely dependent
+upon the data. Most notably, the quantity of the data. The greater the
+quantity of data available the less susceptible the model will be to
+variations and therefore the more likely it is to be accurate. This does
+unfortunately require greater time. The minimum amount of data points
+for any accuracy will be three. The model will then seek to identify the
+least amount of data points required to generate an accurate model.
+Initially this will consist of a trial set between 3 and 15 data points.
+
+Variance model
+
+Ultimately, the combination of the two variables is what generates the
+accuracy, an experiment was therefore created to understand which
+variables presented the best outcome. A linear regression Machine
+Learning (ML) algorithm was created which would predict the distance
+from the sensing platform based upon the data points available. Twenty
+trial combinations were tested, accounting for every combination of
+sensor accuracy and data points. The algorithm generates random
+datapoints within the possible range from the baseline to double the
+stated sensor accuracy, accounting for the positive and negative error
+margin. The randomness represents the inaccuracy and therefore the
+variability, as it is unlikely that the inaccuracy will be predictable.
+When run, the algorithm produces the predicted position at 10m from the
+target, simulating the desired impact point. The earliest data point is
+150m from the target, whilst this may seem large, it enables just over
+100ms for processing and effector launch. Each combination was tested 10
+times and the standard deviation was taken.
+
+This experiment will only assess the x axis (azimuth), but due to
+spherical nature of the projectile, it is assumed that this is
+representative. The model at Figure ‎4‑3 demonstrates how the baseline
+distance (10m) was defined, for simplicity it is assumed that the firing
+platform is firing at a 0° to the target platform, therefore the
+baseline remains consistent. This also enables a simple reference for
+accuracy to be used and compared.
+
+[A picture containing saw Description automatically generated]
+
+Figure ‎4‑3 X_Data development
+
+The summary of the experiment, including the outputs and input data at
+Figure ‎4‑4. The probability of the P_(PIP(x, y)) is calculated by
+taking the standard deviation of each combination, representing the
+basket of variability, it will then be divided by projectile size. The
+formula at Equation ‎4‑2 details the process of calculating the
+probability, where D is equal to the projectile diameter and σ
+represents the standard deviation of the combination samples:
+
+  P_(PIP(x, y)) = D − (D + σ) Equation ‑ X, Y Intercept equation
+
+D = Diameter of projectile
+
+σ = Standard deviation of sample size
+
+X,Y Intercept Point Model Results
+
+  Exp No.   Sensory accuracy (mm)   Volume of Data points   Exp 1   Exp 2   Exp 3   Exp 4   Exp 5   Exp 6   Exp 7   Exp 8   Exp 9   Exp 10   Coefficient   PPIP
+  --------- ----------------------- ----------------------- ------- ------- ------- ------- ------- ------- ------- ------- ------- -------- ------------- ----------
+  1         10                      3                       9948    9998    9961    10042   10049   10029   9975    10020   9986    10002    34.07508      0.42319
+  2         10                      5                       10012   10021   9991    10013   9993    10010   9995    9992    10007   10008    10.5914       0.702417
+  3         10                      7                       10015   10002   9999    10013   10013   9995    10005   10007   10003   10016    7.223419      0.775833
+  4         10                      10                      10019   10006   10006   10013   9995    10007   9996    10014   10002   10004    7.627436      0.766226
+  5         10                      15                      10010   10012   10014   10010   10014   10018   10006   10006   10009   10010    3.725289      0.870313
+  6         15                      3                       9972    10041   9953    10049   10005   9968    9978    10016   10054   10011    36.02484      0.409669
+  7         15                      5                       10022   10030   10005   10037   10008   10002   9997    10028   10017   10034    14.31394      0.635907
+  8         15                      7                       10006   10018   10046   9998    10024   9978    10011   10033   10019   9999     19.34942      0.563705
+  9         15                      10                      10003   10018   10016   10015   9992    10003   10003   10013   10034   10018    11.65476      0.68204
+  10        15                      15                      10011   10015   10019   10009   10002   10006   10023   10014   10005   10024    7.568942      0.767602
+  11        25                      3                       10064   10000   9900    10021   9977    9939    9999    10019   10014   9967     46.46863      0.349804
+  12        25                      5                       10018   9998    10061   10020   10038   9995    9981    10105   10021   9992     37.36442      0.40087
+  13        25                      7                       10010   10027   9985    10029   10038   10026   10019   9989    10001   10061    23.08559      0.519906
+  14        25                      10                      10009   10016   10006   10008   10047   10022   9969    10034   10051   10027    23.58177      0.514596
+  15        25                      15                      10034   10027   10014   10006   10005   10009   10020   10024   10028   10024    10.06037      0.713056
+  16        20                      15                      10018   10019   10016   10015   10031   10018   10010   10018   10030   10012    6.848357      0.78497
+  17        18                      15                      10014   10015   10022   10024   10031   10022   10024   10022   10011   10011    6.552353      0.792334
+  18        17                      15                      10010   10017   10023   10007   10022   10019   10021   10026   10006   10012    7.087548      0.779118
+  19        25                      25                      10002   10016   10027   10028   10027   10017   10010   10012   10030   10020    9.206881      0.730847
+
+Figure ‎4‑4 X,Y Intercept Model Data
+
+Model Analysis
+
+The experiment showed that both factors played an important impact on
+the probability of a hit. Figure ‎4‑5 shows which variables generated a
+>0.7 P_(PIP(x, y)). It is important to note, if the threshold is raised
+to >0.8, only the 10mm (accuracy) and 15 (data points) would have been
+successful.
+
+[]
+
+Figure ‎4‑5 Success Threshold. The black dashed line shows a >0.7
+P_(PIP(x, y)) the green dashed line shows a >0.8.
+
+[]
+
+Figure ‎4‑6 Data distribution. each of the violin plots represent the
+spread of predicted intercept points for each combination of sensor
+accuracy (x-axis) and variance (denoted by colour, see legend), the two
+red lines represent the projectile diameter.
+
+Figure ‎4‑6 demonstrates how the data was distributed throughout the
+experiments, the two horizontal red lines represent the projectile
+diameter. It shows that the most consistent sensor is 10mm, whilst the
+15mm demonstrates a similar max/min, the internal distribution still
+leaves a large margin for error. The data also shows that as the sensor
+accuracy increases, as does the probability. A 10mm sensory accuracy
+demonstrates the most effective sensor accuracy within this trial. This
+is therefore assessed to be the minimum sensor accuracy, required to
+achieve a hit. If this is not possible, a 25mm sensor accuracy could be
+used, but requires a significant increase in data points to enable it.
+This in turn, either requires a higher frequency of collect, or more
+time, both of which would increase the cost of development. It must also
+be noted that 25mm accuracy, with 15 and 25 data points, does not make a
+significant gain, it can therefore be assessed that the large gains in
+model accuracy are made up to 15 datapoints. This is further
+demonstrated in Figure ‎4‑7, which uses polynomial regression to
+demonstrate the trend of probability against the data points. It shows
+that above 15 data points there are sharply diminishing returns,
+therefore investment should be in increasing sensor accuracy, rather
+than increasing data points.
+
+[]
+
+Figure ‎4‑7 25mm Probability using polynomial regression
+
+The result of this experiment sees that:
+
+P_(PIP(x,y)) = 0.87 (10mm|15)
+
+Z Intercept Point
+
+The second component of P_(PIP) is P_(PIP(z)) which represents the
+probability that at a stated time the projectile will be located at the
+given x, y coordinates. Arguably this requires greater accuracy than
+P_(PIP(x, y)) as it takes only 360μs for the projectile to travel the
+length of itself, using the baseline data. As such, this will be the
+time window of an effective engagement, this is extremely small. It can
+be assumed that the data collection of the z axis will directly link to
+the x, y axis, as such, the number of data points are the same for both
+each. The sensor collecting data will be the same for both metrics but
+it the time (z axis) will be captured as meta-data of the x, y
+coordinates. In line with the results in ‎4.1.2.2.4, 15 data points will
+be also assumed for the z axis. This leaves two variables which will
+subsequently influence the probability. First, as with the x, y axis, is
+the accuracy of the sensor (S_(Acc)), measured this time in μs. The
+second is the combined time for processing and launch of the effector
+(T_(PE)). The sensor accuracy in this dimension relates to the accuracy
+of the time of data capture. The greater the accuracy, the greater the
+location will reflect reality. Insufficient accuracy or fidelity of time
+will prevent the algorithm from predicting within the required time
+window. The combined time required for the processing and launch of an
+effector is just as likely to affect the probability. It dictates the
+minimum distance at which the sensor could collect a data point. As with
+the previous calculations, if this is too long the algorithm will be
+inaccurate. The algorithm is again using linear regression, therefore,
+if the real time and predicted time diverge, they will not converge and
+therefore the likelihood of a miss will increase. For example, if the
+inaccuracy in the sensor data has generated a 20μs error in its
+prediction 10ms after the last sensed data, this would have increased
+significantly with a further 100ms. Therefore, a minor initial error can
+cause a miss. This element will also feed into determining the
+subsequent effector characteristics.
+
+Model
+
+To derive the minimum value for S_(Acc) and T_(PE), a similar model to
+P_(PIP(x,y)) will be used, however, the number of data points will be 15
+throughout and the additional variable will be T_(PE). A baseline will
+be established using a 1μs S_(Acc) and a 1ms T_(PE). A sequence of
+combinations of sensor accuracy and time from sensed data. Each
+combination will be run 10 times to ensure that an average error can be
+formed. To generate the error, the appropriate baseline value
+(calculated from a 0.001 sensory accuracy) will be subtracted from the
+average outcome, this will generate the margin of error in time. If the
+360μs length of the projectile is then divided by the error, it will
+generate a probability that the predicted point contains the projectile.
+The experiment bracketed the variables to understand the possible
+limits. The combinations and input data are available at Figure ‎4‑8.
+
+Results
+
+[TABLE]
+
+Figure ‎4‑8 Z Intercept model data, Nan values represent values that
+could not be calculated as they are the outputs of the baseline values,
+a green PPIP represents a probability >0.7, red represents a value <0.7.
+
+It was found that both S_(Acc) and T_(PE) had a significant impact on
+the P_(PIP(z)), as such, the model identified that each variable to be
+combined to achieve a probability of a hit. Figure ‎4‑9 shows that
+0.5ms, despite being larger than the 0.36ms the projectile requires to
+move the length of itself, can generate a P_(PIP(z)) of 1.0 at ranges up
+to a sensor range of 300ms. When the sensor accuracy is reduced any
+further it also reduces the hit probability. It therefore seems that the
+driving force for the intercept probability is the sensor accuracy, as
+such this should be the focus of development. To achieve the best
+probability, it is assessed that any sensors must have an accuracy of
+>0.5ms and the detection range should be >300ms.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎4‑9 Z-Axis Intercept model representation, displaying the
+prediction curves for each of the last sensed data times, the dashed
+line represents a PPip of 0.7.
+
+As a result of the experiment it can therefore be assumed that the
+following equation is true for the z-axis.
+
+P_(PIP(z)) = P(S_(ACC)|T_(PE))
+
+P_(PIP(z)) = 1.0 (0.5ms|300ms)
+
+ P_(PIP)
+
+With the definition of the two components of P_(PIP) it is possible to
+define what the overall probability will be. As the z axis is a 100%
+probability of intercept, when it is combined with the x, y axis, this
+is the only variable to the probability. If the parameters for the x,y
+and z axis are as prescribed in ‎4.1.2.2.4 and ‎4.1.2.3.1.1, then there
+is an 89% probability that the projectile will be in the predicted
+location. This can therefore be written as:
+
+P_(PIP )(0.89)= (10mm|15) + (0.5ms|300ms)
+
+  Equation 4- PPip variables
+
+When combined, it is assessed that the combination of these factors is
+feasible. The number of data points required is likely to require a
+longer-range sensor system, than was initially identified for the
+‘tripwire’ close range system alone. It must be capable of reaching this
+range whilst remaining within the accuracy parameters stated, of which
+x,y may be the most challenging. This further supports the approach of
+layering sensors, identified in Section ‎3.1.4. In addition, however,
+this can to some degree be mitigated by further reducing the last sensed
+data point, which will in-turn reduce the overall error.
+
+Establish P_(Eff)
+
+Now that the probability of the projectile being in the predicted
+location, has been established, the second component of P_(Hit) is how
+likely an effector is to reach the predicted location. Ultimately
+defining the error is very challenging as it is highly dependent on the
+type of effector used. To some degree, however, this presents an
+opportunity, the size and shape of the effector could be honed to
+guarantee the hit. As a result, this section will seek to define the
+parameters which would provide a >0.9 P_(Eff). This section will not
+seek to define the effector which should be used, but, as with sensors,
+seek to define the effector requirements to enable a hit, from which an
+effector could be derived. Figure ‎4‑10 shows how the P_(Eff) is
+formulated. Ultimately it is related to the dispersion of the effectors
+engagement, in its first approximation this is related directly to the
+effector engagement time, distance, size and a coefficient which
+describes the rate of dispersion. The engagement time itself is a result
+of the effector speed/distance, but also the time required for the
+system to achieve coincidence between the effector and the PIP.
+
+[A picture containing umbrella Description automatically generated]
+
+Figure ‎4‑10 Effector probability diagram, the blue shaded area
+represents the potential spread of the effector. The ambition is to
+reduce the cone so that it equates to a probability of >0.9.
+
+Effector hit definition
+
+The first challenge of this variable is to clarify what constitutes an
+effector hit on the projectile. This paper acknowledges that the
+position on the projectile of the hit will have a significant impact on
+the rate of yaw and the trajectory, once hit. This will be analysed in
+Section 5 and for this section it will be assumed that a hit anywhere
+laterally, will enable the defeat of the projectile. However, the impact
+of a glancing hit will be an important factor to understand, it is
+possible that a ricochet of this type will transfer the 3300J of energy
+required to generate the sufficient angle of yaw. It is stated that the
+critical angle of obliquity is related to the impact velocity (Johnson,
+Sengupta and Ghosh, 1982). This is further demonstrated in the graph at
+Figure ‎4‑11, though this replicates an LRP strike against a flat plate
+and not, arguably the reverse. It does however provide an insight into
+the interaction of two similarly dense projectiles, at high velocity. It
+also suggests that in order to maximise the likelihood of an effective
+strike, the effector should seek to interact as close to perpendicular
+as possible.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎4‑11 Critical Ricochet angle of a LRP (Daneshjou and Shahravi,
+2008)
+
+The relationship of speed to critical ricochet angle also suggests that
+a higher speed effector will increase the likelihood of a successful
+hit. The relationship of velocity to kinetic energy, as seen in Equation
+4-4, also means that a high velocity will significantly increase the
+kinetic energy within the effector.
+
+$$KE = \ \frac{1}{2}mv^{2}$$
+
+KE = Kinetic Energy
+
+m = Mass
+
+v = Velocity
+
+  Equation 4- Kinetic Energy
+
+Figure ‎4‑12 shows the relationship of velocity and kinetic energy (KE)
+for a 10g and 100g projectile, for reference a Remington .45ACP bullet
+typically weighs 15g (Ammunitionstore, 2004). The 100g model suggests
+that at 2400m/s, which is the top end velocity of a 125g EFP slug
+(Mulligan, 2011), would have 287760J of KE and the 10g, 28776J.
+
+[A screenshot of a cell phone Description automatically generated][A
+screenshot of a cell phone Description automatically generated]
+
+Figure ‎4‑12 Kinetic Energy of a 10g and 100g projectile, the red line
+represents 3300J of KE.
+
+Whilst it is accepted that not all energy would be transferred from the
+effector to the projectile, if such a high speed is used, it would only
+require 1.14% of the 100g effector’s KE to be transferred upon impact.
+Using Equation 4-5 (Hazell et al., 2009) which calculates the energy
+transfer, the total reduction in velocity of the effector to still
+transfer 3300J of energy can be calculated.
+
+$E_{t} = \frac{1}{2}m_{p}(v_{i}^{2} - v_{r}^{2}$)
+
+$\mathbf{3300 =}\frac{\mathbf{1}}{\mathbf{2}}\mathbf{0.1(}\mathbf{2400}^{\mathbf{2}}\mathbf{-}\mathbf{2386}^{\mathbf{2}}$)
+Equation 4- Energy transfer upon impact equation
+
+E_(t) = Energy transferred
+
+m_(p) = Projectile mass
+
+v_(i ) = Initial velocity
+
+v_(r ) = Residual velocity
+
+In effect, this equation means that an effector, even as small as 100g,
+with a 2400m/s speed, could generate sufficient yaw to cause the
+projectile to miss even with a marginal hit on the projectile. A
+reduction on the effector of only 14m/s, would suggest that even an
+interaction between the projectile and effector of 1mm, would still be
+sufficient. This could suggest that an area effector, such as a
+fragmentation grenade used by Arena (Jane’s Defence, 2019j), would
+achieve a greater likelihood of success, but this comes with
+significantly greater collateral implications, which negate its utility.
+Whilst this is an assumption and its validation sits, outside of the
+scope of this paper, it does feed into potential future work. But it
+does demonstrate effectively that if the effector interacts with the
+projectile it will generate the desired yaw and therefore a hit can be
+classified as the interaction anywhere on the projectile.
+
+Engagement time
+
+The engagement time is closely linked to the effector speed and
+therefore the distance at which the effector can engage. They are
+closely linked, but not directly, as the overall engagement time
+includes the processing and mechanical actuation of the effector to the
+desired location, as well as the effector launch itself. These three
+times would be unable to commence until the final sensed data has been
+read, therefore making them dependant on the 300ms, 210ms and 180ms
+times, established in section ‎4.1.2. From there each of the actions are
+sequential and dependant, the actuators can’t achieve coincidence with
+the PIP until it has been processed and the effector cannot fire without
+coincidence.
+
+Processing
+
+The processing time required to achieve this depends entirely upon the
+processing power within the onboard Computer Processing Unit (CPU). This
+is therefore a relatively scalable variable, as such this can be shifted
+left or right to enable the time for the other two components. However,
+a rough estimation can be made using the “big-O notation”, given this is
+a linear algorithm, it is notated as a O(n) algorithm. Using this
+notation, supported by the %timeit feature of Jupyter notebooks the
+following was time was taken from the linear regression ML function used
+to define P_(PIP(x, y)), using 15 datapoints:
+
+637 µs ± 128 µs per loop
+
+(mean ± std. dev. of 7 runs, 1 loop each)
+
+Whilst this is only one algorithm, its simplicity reflects any algorithm
+that would be used to predict the P_(PIP), it can therefore reasonably
+be assumed that the processing time will be <1ms.
+
+Achieving Coincidence
+
+A key component of time will be the ability to rotate the effector to
+the position required for it to engage the threat. Current systems exist
+which are capable of achieving this such as the General Dynamics high
+speed two-axis gimbal which is claimed to be capable of “a 90-degree
+azimuth, 45-degree elevation combined move can be performed in less than
+20 milliseconds, including settle” (General Dynamics Mission Systems,
+2020). This is exceptionally fast, though as a manufacturer’s statement
+it is liable to optimism bias and the additional weight of heavier
+effectors may reduce this time to some extent. It is also, however,
+unlikely that the effector would need to rotate through a 90-degree arc,
+infact adjustments, if assumed to be roughly adjacent to the platform,
+will be minor by nature. It could also be inferred that because this
+system was developed in 2020, that this is an area of future investment
+and the capability is likely only to increase. Furthermore, by using an
+unmanned platform, there is potentially greater space and weight
+available, therefore more launchers could be integrated thus minimising
+the rotational requirement. As a result, the 20ms time factor for
+movement can be assumed to be appropriate for this system. This short
+reflex time means it is inapplicable to the model, as even within the
+passive model, the gimbal could adjust 18 times within the track phase.
+This is significantly greater in the active model. The 20ms can then be
+removed from the total effector engagement time, to provide the time for
+the effector to reach the target. If 180, 210 and 300ms are taken as the
+overall engagement time, this leaves 159, 189 and 279ms for the effector
+to reach the projectile.
+
+Effector launch
+
+The factors which effect the launch time required are, the distance from
+the target and the speed at which the effector travels. The graph at
+Figure ‎4‑13 shows the possible engagement distances available at four
+different speeds, and across the three time windows. It demonstrates
+that even using the most constraining time window, a projectile
+traveling at 2400m/s could engage a projectile up to 380m away, which is
+significant and significantly above the outline requirement.
+
+[A picture containing text Description automatically generated]
+
+Figure ‎4‑13 Effector engagement distances, each black line represents
+the three potential engagement times
+
+Effector accuracy
+
+The accuracy of the effector could be impacted by a series of factors.
+These factors could mean that whilst the intercept point is correct, the
+effector may not be able to hit it. These are likely to increase as the
+engagement distance increases. One factor is the effects of external
+ballistics, which are defined as: gravity, wind and drag (Khan, 2017).
+Whilst these effects are traditionally seen in slower projectiles, the
+margins of error required for this engagement, may see them having to be
+modelled for some effectors. If the effect is significant, external
+ballistics may present a cap on the distance from which the projectile
+can be engaged. As this is largely the result of time, rather than
+distance, the best method of minimising this effect may be generating
+the greatest speed. This is supported by the graph at Figure ‎4‑14 which
+uses an online shooting trajectory calculator to demonstrate the
+difference in projectile trajectory between 860m/s (2820fps) and
+304.8m/s (1000fps) in the same atmospheric conditions. Whilst this is a
+model based around a bullet, it still serves to demonstrate the effect
+of increasing velocity on external ballistics. As such, the greatest
+possible speed should be employed to thus minimise the effect of
+external ballistics.
+
+[[Chart Label] Ballistic Trajectory Chart]
+
+Figure ‎4‑14 Trajectory comparison (ShootersCalculator, 2020)
+
+The other area which could affect the accuracy of the effector are
+variances in manufacture, which may still sit within a tolerance, but
+would regardless have an impact. Unlike external ballistics, this is
+largely independent of the distance not the time. For example, a 1%
+manufacture tolerance would cause the effector to miss the projectile in
+2.5m. The distance required and the manufacture tolerance must therefore
+be balanced. Figure ‎4‑15 is a table from ISO 286 showing the industry
+standard tolerance grades.
+
+[A close up of text on a white background Description automatically
+generated]
+
+Figure ‎4‑15 ISO 286 manufacture tolerances (International Organisation
+for Standardisation, 2010)
+
+To find the minimum required tolerance, each of the tolerances was found
+as a percentage of the overall effector diameter. It was then multiplied
+by distances from 0-300m, this tolerance then generated an assessed
+potential variance over than range. Figure ‎4‑16 shows graphically how
+these variances could develop over the range. It looks at both a 10mm
+and a 25mm effector and the red line details where the variance is
+greater than 25mm, which would therefore make the probability of a hit
+>1. By taking the previously established speed of 2400ms and a time of
+159ms, the projectile is capable of a max engagement of 381m. IT10, with
+a 25mm projectile, appears to be the most effective combination. Whilst,
+it does not enable the effector to reach its full range, it still
+enables a 298m engagement.
+
+[][]
+
+Figure ‎4‑16 Dispersion rates across ISO 286 IT levels, 100% of eff
+diameter = 25mm
+
+This model is reliant upon the assumption that the variance would
+increase both directly and proportionally to the increase of range. This
+assumption means that the output of this model cannot be taken
+specifically. It does however demonstrate that even within current
+manufacturing tolerances there is likely to be sufficient accuracy to
+reduce the effector variance below the point at would it would increase
+the likelihood of missing the target.
+
+System requirements
+
+The total probability of a hit can be derived from the probability tree
+at Figure ‎4‑1, by inserting the correct probability values, this is
+shown diagrammatically at Figure ‎4‑17:
+
+Figure ‎4‑17 Summary probability tree
+
+As the only variable which is less than 1 is P_(PIP(x, y)) it actually
+forms a simple calculation of ((0.87 x 1) x 1) = 0.87. Therefore, this
+is the overall probability of a hit If the effector achieves all the
+requirements stated in Table ‎4‑1.
+
+The modelling within this section has therefore demonstrated that the
+effector could engage the projectile with a 0.89 probability of a hit,
+if the effector achieves the requirements stated in Table ‎4‑1 Effector
+requirements. These should therefore be the baseline set of manufacture
+requirements to enable the system to operate.
+
+Table ‎4‑1 Effector requirements
+
+  Serial   Requirement                                       Parameters
+  -------- ------------------------------------------------- --------------
+  1.       Sensor accuracy (x,y)                             10mm
+  2.       Sensor data points                                15
+  3.       Sensor accuracy (z)                               0.5ms
+  4.       Maximum last sensed data                          300ms (500m)
+  5.       Manufacture tolerance                             <IT10
+  6.       Engagement range                                  298m
+  7.       Effector speed                                    2400m/s
+  8.       Processing time                                   <1ms
+  9.       90-degree azimuth, 45-degree elevation rotation   <20ms
+  10.      Effector diameter                                 25mm
+
+Additional engagement characteristics
+
+Section 4 enabled this paper to prove that engaging the projectile is
+feasible, which was the primary objective of this research. There is
+however some additional areas that should be explored to ensure the
+project provides appropriately comprehensive research. As a result, this
+section will seek to explore where the effector should engage the
+effector and how the models, put forward in this paper, compare with
+real-world ammunition threats, rather than solely the baseline.
+
+Where to hit
+
+The probability of a hit model uses the assumption that the effector
+could strike the projectile at any point on the effector and achieve the
+same effect. Whilst Section ‎4.1.3.1 effectively demonstrated that the
+interaction could be at any point in the diameter of the projectile, it
+has not been yet demonstrated how an interaction at different sections
+across the length of the projectile affect its yaw rate. The study by
+David Rocco, which is a key foundation study for this paper, was able to
+generate the proportionally sufficient projectile yaw by striking the
+centre of the projectile (Rocco, 2018). This study required 3300J to
+generate 7m of yaw, this can therefore be taken as the baseline figure.
+Using the algorithm from Figure ‎2‑12 and the max intercept range of
+300m, identified in the system requirements, the projectile could yaw up
+to 1806m from its target if struck centrally. During the P_(PIP(z))
+experiment, it was seen that 0.3ms sensor accuracy generated a 2.86
+probability of hit, which suggests it could enable the projectile to be
+divided into three sections, with the most optimal being targeted. This
+section will therefore assess the implications of striking the
+projectile in the fore and aft of the projectile, in comparison to the
+centre, each of which is defined at Figure ‎5‑1.
+
+[A picture containing game, player, sign, man Description automatically
+generated]
+
+Figure ‎5‑1 Projectile section definition
+
+The point at the centre of the projectile will be representative of the
+centre of mass. As a result a strike at either the fore or aft points
+will generate angular momentum around the centre, which will act as the
+axis for the rotation (Khan Academy, 2020). If the kinetic energy
+striking that point is greater than the forward kinetic energy, then it
+can be assumed that this will cause the projectile to continually rotate
+around the lateral axis. Whilst this may still achieve the intention of
+missing the target, it would make the projectiles path unpredictable and
+erratic.
+
+  Name     Mass(kg)   Velocity(m/s)   KE(MJ)   References
+  -------- ---------- --------------- -------- -------------------------
+  M829A1   4.6        1560            5.597    (Jane’s Defence, 2019e)
+  3BM42    4.85       1700            7.008    (Jane’s Defence, 2019b)
+  120-1    4.03       1730            6.031    (Jane’s Defence, 2019g)
+
+Table ‎5‑1 Projectile kinetic energy
+
+If this KE data for each projectile is compared to the data in Table
+‎5‑1, the lateral and forward KE’s can be compared. Using the 100g
+effector only 287760J of lateral KE is generated at 2400m/s. Which is
+only 5% of the forward motion, as such it is therefore unlikely to
+generate this type of lateral axis rotation in the projectile.
+
+[A drawing of a face Description automatically generated]
+
+Figure ‎5‑2 Initial impact and effect of drag from a plan view.
+
+This does however only account for the initial strike of the effector,
+but as this strike will generate a moment, causing the front of the
+projectile to rotate around the centre of mass. Even a minor rotation
+will generate a significant level of drag, which is likely to exacerbate
+the moment and cause the projectile to spin, as shown in Figure ‎5‑2. A
+strike to the fore of the projectile is likely to increase the angle of
+yaw as it causes to spin away from the axis of travel. This is however
+the opposite for a strike to the aft, which would cause a spin towards
+the axis of travel and which could cause the projectile to yaw in the
+wrong direction, towards the protecting platform. The separate
+trajectory modelling for each strike location is out of the scope of
+this paper, but it does present an opportunity for future research. But
+regardless, some helpful implications can be made if the former
+assumptions are adopted. Firstly, the potential for a reduction in rate
+of yaw that a strike to the aft could generate makes it an undesirable
+location. This leaves the fore and the centre, of these both would meet
+the minimum yaw rate, but the centre is a more preferable location to
+strike. Firstly, the avoidance of spin will generate a more predictable
+yaw, this is important for collateral damage considerations. Secondly,
+by striking the middle of the projectile the effector has the greatest
+possibility of a hit on the lateral plane. If it over leads it could hit
+the fore, however, if you over lead the fore strike it will miss.
+Therefore, as the required level of yaw can be achieved by striking the
+centre of the projectile, it is suggested that striking the centre of
+the projectile will be the most effective targeting method.
+
+Real world case studies. 
+
+So far in this section, the probabilities have been developed using a
+fictional projectile generated as a product of the mean values from a
+range of Long Rod Penetrators. As discussed in section ‎2.1.3, whilst
+this was consciously done to generate a reasonable baseline, it does
+mean that in some areas the projectiles may not generate the same
+P_(HIT). Most notably this is related to those physical projectiles with
+the smallest length and the smallest diameter. Table ‎5‑2 shows the
+projectile with the shortest length, the US M89A3 and the Chinese 125-1,
+which has the smallest diameter. Of note, these are two different
+projectiles, which supports this papers’ premise the using a baseline
+formed from the characteristics mean was the most appropriate solution.
+The M829A3 will be run through the P_(PIP(x, y)) model and the 125-1
+though the P_(PIP(z)). As the two characteristics are found on separate
+projectile, a combined probability will not be calculated. Despite this,
+the test still generates a useful measure of the applicability of the
+platform, proving its viability against real-world threat examples.
+
+Table ‎5‑2 Projectiles with the smallest dimensions
+
+  Name     Length (mm)   Diameter (mm)   Country of Origin   Reference
+  -------- ------------- --------------- ------------------- -------------------------
+  M829A3   684           22              USA                 (Jane’s Defence, 2019e)
+  125-1    554           28              China               (Jane’s Defence, 2019g)
+
+M89A3
+
+The diameter of the M89A3 is 3mm less than the mean of 25mm. This does
+increase the challenge in trying to predict the X,Y intercept point, as
+it is a proportionally smaller target. When the model is re-run with the
+22mm value, it in fact only reduces the probability by 2%, moving from
+0.87 to 0.85. It can be assessed that this relatively significant
+reduction in size has a very minimal impact on the probability of an
+intercept. The second component which is affected by the diameter is the
+likelihood of the effector to strike the projectile. When the effector
+model was re-run with the new diameter, it had a more significant effect
+that the intercept prediction. The range at which the effector could
+guarantee a strike, assuming the IT10 standard, has changed from 298m to
+262m, a reduction of 12%. Therefore, if this was a likely target set the
+platform would either have to accept a reduced engagement range of -12%
+or improve the manufacturing tolerances to IT09. As improvements, such
+as this, are likely to be more expensive, different grades of effector
+could be used to target specific threats.
+
+125-1
+
+The 125-1 is only 554mm in length, which is 53mm shorter than the
+baseline projectile, which is a 9% reduction. This reduction will have
+an impact on the probability in the Z axis as it will reduce the time
+taken for the projectile to travel the length of itself, therefore
+reducing the time for the predicted point to coincide with the
+projectile. It is unlikely to affect the likelihood of the effector
+interaction, as length sits far outside the boundaries of IT10
+manufacture tolerances. If the sensor accuracy is 0.3mm then this will
+not impact the likelihood of impact as it reduces from 2.86 to 2.62. As
+a result, it can still target the centre of the projectile. Even if the
+sensor accuracy is reduced from 0.3 to 0.5, it still only reduces the
+probability to 1.27. Therefore, even with the significant reduction in
+length of the 125-1, the defined variables are accurate enough to still
+generate the same probability of a hit.
+
+Summary
+
+The dimensionality of the projectile does impact on the likelihood of
+impact, but it is not as significant as might have originally been
+anticipated. As shown in Figure ‎5‑3, which shows the probability of a
+hit for a percentage from 1% of to 140% of the baseline dimensions, the
+greatest increase in probability, in either dimension is between 1% and
+20%. Beyond 20% the probability is either above 1, in the case of
+length, or for diameter, the gradient slows significantly. It can
+therefore be assumed that for any reasonable variation, (+/-40%) in the
+dimensions of a LRP, the probability of a hit will still remain above
+70%. This means that the system is not dependant upon specific weapon
+types and would also provide a level of resilience against future weapon
+developments, if it is assumed that a significant leap in technology
+would be required to reduce the dimensions above 40% and retain the same
+kinetic energy.
+
+[]
+
+  Figure ‎5‑3 Area plot showing the impact on likelihood of hit for
+  differing percentages of the baseline dimensions.
+
+CONCLUSION
+
+The previous sections of this thesis have demonstrated that an
+autonomous APS platform, if developed in line with the developed
+requirements, is technically feasible and theoretically capable of
+defeating an LRP, in a manner in which currently available open-source
+technology cannot. By way of a conclusion this section will draw
+together all the capability requirements and constraints, then apply
+them to a theoretical example of use, to understand its practical
+feasibility and define potential areas for further work.
+
+Requirements and characteristics
+
+The following table at Table ‎6‑1 draws together all of the development
+requirements and the characteristics of the system, in order to allow it
+to defeat an LRP. Not all parameters are exclusive, in some areas other
+values may produce success, however these were the values that resulted
+from the model testing.
+
+Table ‎6‑1 Consolidated table of system requirements and
+characteristics.
+
++--------+-----------------------------+-----------------------------+
+| Serial | Factor                      | Parameters                  |
++========+=============================+=============================+
+| 1.     | Sensor accuracy (x,y)       | 10mm                        |
++--------+-----------------------------+-----------------------------+
+| 2.     | Sensor data points          | 15                          |
++--------+-----------------------------+-----------------------------+
+| 3.     | Sensor accuracy (z)         | 0.3ms (desirable)           |
+|        |                             |                             |
+|        |                             | 0.5ms (minimum)             |
++--------+-----------------------------+-----------------------------+
+| 4.     | Maximum last sensed data    | 300ms (500m)                |
++--------+-----------------------------+-----------------------------+
+| 5.     | Manufacture tolerance       | <IT10                       |
++--------+-----------------------------+-----------------------------+
+| 6.     | Max effector range          | 298m (against a 25mm        |
+|        |                             | target)                     |
++--------+-----------------------------+-----------------------------+
+| 7.     | Effector speed              | 2400m/s                     |
++--------+-----------------------------+-----------------------------+
+| 8.     | Processing time             | <1ms                        |
++--------+-----------------------------+-----------------------------+
+| 9.     | 90-degree azimuth,          | <20ms                       |
+|        | 45-degree elevation         |                             |
+|        | rotation                    |                             |
++--------+-----------------------------+-----------------------------+
+| 10.    | Effector size               | 25mm                        |
++--------+-----------------------------+-----------------------------+
+| 11.    | Effector weight             | 100g                        |
++--------+-----------------------------+-----------------------------+
+| 12.    | Effector engagement time    | <141ms                      |
++--------+-----------------------------+-----------------------------+
+| 13.    | Projectile distance         | 46.4m                       |
+|        | travelled during effector   |                             |
+|        | engagement                  |                             |
++--------+-----------------------------+-----------------------------+
+| 14.    | Maximum total engagement    | 141ms                       |
+|        | sequence time (assuming 1   |                             |
+|        | data point/ms)              |                             |
++--------+-----------------------------+-----------------------------+
+| 15.    | Minimum range for           | 338.4m                      |
+|        | engagement                  |                             |
++--------+-----------------------------+-----------------------------+
+| 16.    | Minimum impact range        | 9m                          |
++--------+-----------------------------+-----------------------------+
+| 17.    | Minimum defendable          | 347.4m                      |
+|        | engagement                  |                             |
++--------+-----------------------------+-----------------------------+
+| 18.    | APS range from projectile   | 220.58                      |
++--------+-----------------------------+-----------------------------+
+
+Practical Feasibility
+
+To contextualise these characteristics the system will be hypothetically
+employed in support of an armoured platform. This will seek to
+understand how the characteristics enhance or constrain the armoured
+platforms manoeuvre and define how the APS can defend the platform.
+Figure ‎6‑1 demonstrates the minimum range requirement for an engagement
+at max effector range, in this situation the APS would be able to defend
+the platform from a projectile that was fired from greater than 356m
+from the target platform. Another useful consideration shown by this
+diagram is that although the effector is capable of striking the
+projectile from 298m, this does not necessarily mean that the platform
+can be this far from the projectile. If it takes 120ms for the effector
+to reach its intercept point, the projectile will have travelled
+200.37m. Using trigonometry, this means that the furthest from the
+projectile the system can be is 220.58m.
+
+[A close up of a map Description automatically generated]
+
+Figure ‎6‑1 Practical engagement sequence example.
+
+Such a limit of 220.58m places some constraints on the platform’s
+mobility. In addition, the figure displays in effect the last safe
+moment engagement of 9m, just sufficient to generate the yaw required to
+miss the target. If the distance between the projectile and the platform
+remains at a constant 220.58m, then the further the intercept point sits
+from the target platform, the narrower the cone of protection will be.
+Figure ‎6‑2 demonstrates the potential cone of protection for a minimum
+distance engagement. By adding the 9m yaw distance and the projectile
+travel distance, it can be seen that the system is able to cover a 46°
+arc. If this is increased to a 99m yaw distance reduces the arc to 36°.
+The employment of the system will therefore require a level of balance
+to be struck between generating sufficient buffer to ensure the
+projectile will yaw sufficiently to miss the target and providing the
+optimal protection to the platform.
+
+[A screenshot of a cell phone Description automatically generated]
+
+[A close up of a device Description automatically generated]
+
+Figure ‎6‑2 Cone of protection calculation at minimum intercept range
+(9m) and a larger range (20m)
+
+The Whittaker model suggests that most vehicles will be struck on the
+frontal arc and therefore armour should be focussed, but not solely, on
+the front 60° of the platform (Rahman et al., 2017). This sees the 99m
+yaw distance, demonstrated in Figure ‎6‑2, as almost half of the
+Whittaker model suggestion. This may seem like a significant drawback
+from the outset, but as anti-armour technology develops and
+proliferates, there has been a feeling from scholars that the Whittaker
+model, which was developed in 1948, is outdated and armour should now
+have a 360° focus (Hazell, 2016; Manning and Simner, 2009). With this in
+mind, this plays to the strength of an autonomous systems flexibility.
+It has the ability to predict where firing vehicles may be, based on
+threat, human direction and external data sources, then adapt its
+posture and location. As such, assuming this component is sufficiently
+accurate, the system will be able to deliver a complete coverage to the
+platform. Furthermore, this could be mitigated to a greater extent by
+increasing the number of platforms conducting the protect task. Whilst
+this may not be feasible for single vehicle formations, larger groups of
+vehicles could group their platforms to provide the best protection for
+the threat.
+
+The engagement limitation is to some degree only a limitation of the
+capabilities assessed in this paper. The factor which has the greatest
+influence upon the engagement range is the manufacturing tolerances, as
+this dictated the likelihood of an intercept. As such, it is suggested
+that an area for further work could be the development of an effector
+with a higher manufacturing tolerance, whilst remaining sufficiently
+rugged for effective employment, which would enable the intercept to
+occur at a greater range.
+
+Whilst the minimum engagement range is 347m, if the effector is fired at
+its full range, this could be reduced by moving the platform closer to
+the projectiles and target platform simultaneously. Though it is noted,
+that this would not always be feasible within the situation. This would
+enable the tactical commander to reduce the minimum engagement range
+effectively. If the distance from the projectile was reduced to 5m and
+the effector struck the projectile at 9m from the target, the overall
+engagement could be within 64m. This would however significantly limit
+the platforms flexibility and agility.
+
+Applicability in a complex environment
+
+The use of yaw as a defeat mechanism does also create a challenge for
+employment in complex environments, especially those surrounded by
+people or soft skinned vehicles. If the projectile is intercepted at the
+99m point, using the model at Figure ‎2‑2, the projectile would yaw 170m
+from the centre of platform. In an urban setting, this means the
+projectile is likely to impact into a building, with some significant
+force. Furthermore, the short range nature of urban engagements means
+that many may sit below the systems minimum range bubble. As a result,
+its employment in the urban is limited. Of greater concern than the yaw
+angle, is the distance that the projectile will continue to travel
+beyond the target platform. Despite the interaction with the effector,
+it can be assumed that a significant amount of energy resides within the
+projectile, meaning it could travel much further than the target
+platform. As the armoured platform is likely to be the forward edge of a
+formation, followed by lighter armoured Infantry Fighting Vehicles or
+Armoured Personnel Carriers (MOD, 2011), this still poses a significant
+risk to those platforms. In addition, this travel could also be seen in
+the vertical plane, causing risk to low flying platforms such as
+helicopters. If the effector was able to interact with the projectile
+from an elevated position, it could cause the effector to yaw with a
+downward trajectory, forcing it into the ground. This could be the
+result of repurposing a mast mounted camera system (FLIR Systems, 2020),
+already common place on the battlefield. With this approach, it is
+likely to increase the risk of ricochet, as such, it would warrant
+further investigation into the trajectory of a yawing projectile and
+appropriate methods to negate its effects.
+
+Summary
+
+The use of case studies demonstrated in this section shows that this
+theoretical system is not the perfect defence system, but it does
+present an opportunity, assuming the requirements can be met, to defeat
+an ammunition type which is currently not possible with current APS. It
+provides flexible and dynamic protection that can be quickly adapted and
+reallocated to the areas of most need. In addition, the freedom of a
+bespoke APS platform is its modularity and carriage weight, this would
+enable the system to potentially carry different systems to tackle
+different threats. Thus, making it a more complete suite of protection.
+By removing this threat from a tank, this will enable armour development
+to focus on other characteristics than depth, namely space and weight.
+Ultimately this system would enable an armoured platform to be faster,
+lighter and better protected. Whilst this may appear to be a minor
+change, it actually holds implications for armoured warfare as a whole.
+Reducing mass and weight enables the platform to be projected further
+strategically, which in turn increases the opportunity for its use and
+its application on the battlefield. This is a topical and important
+factor as some nations begin to have discussions about the relevance and
+utility of armour on the battlefield (Owen, 2020). Tactically, it
+enables the system to be faster and more agile, allowing it not to be
+acquired, rather than not be hit. It also presents the freedom for
+platforms to incorporate additional sensors or weapon systems, something
+that has been constrained by size and weight. In conclusion this paper
+has presented a technically feasible method of developing a more
+effective, agile and automated APS, than the current set of APS
+available.
+
+AREAS OF FUTURE RESEARCH.
+
+The following areas present possible topics for further investigation as
+a result of this research:
+
+1.  A practical study, further developing this theoretical work and
+      demonstrating its capability in an experimental setting, testing
+      and proving the feasibility of the stated effector requirements.
+
+2.  Modelling of the trajectory of flight of an LRP and understanding
+      its consistency over differing ranges.
+
+3.  Understand and define the amount of Kinetic energy transferred
+      between two projectiles during a partial interaction.
+
+4.  Trajectory modelling showing the difference in yaw rate if an LRP is
+      struck by an effector at the fore, centre or aft.
+
+5.  Methods of controlling the projectiles trajectory, post interaction,
+      to limit or mitigate any collateral damage.
+
+6.  Further development of an effector, which has higher manufacturing
+      tolerances and therefore the ability to engage a projectile at a
+      significantly greater range.
+
+7.  Development of an algorithm capable of monitoring and maintaining a
+      specific distance from a stated platform, whilst identifying and
+      occupying positions for situational awareness.
+
+8.  To what extent can an autonomous platform, heavily reliant upon
+      sensors be protected from Electromagnetic and cyber effects.
+
+9.  Can this system be employed to protect multiple vehicle formations?
+
+REFERENCES
+
+Abd Ghani, K. and Yosri, H. (2011) ‘Application of Artificial
+Intelligent For Armour Vehicle Detection Using Digital Image Processing
+For Aerial Application’, International Journal on Advanced Science,
+Engineering and Information Technology, 1(2), p. 173.De Albuquerque,
+M.P., Chacon, G.T., De Faria, E.L. and Murari, A. (2012) ‘High-speed
+image processing algorithms for real-time detection of MARFEs on JET’,
+IEEE Transactions on Plasma Science, 40(12), pp. 3485–3492.Allison, G.
+(2018) A look at the Israeli Iron Fist system., UK Defence
+JournalAmmunitionstore (2004) ‘.45 acp’, , pp. 1–8.Amraii, S.A., Walker,
+P., Lewis, M., Chakraborty, N. and Sycara, K. (2014) ‘Explicit vs. Tacit
+leadership in influencing the behavior of swarms’, Proceedings - IEEE
+International Conference on Robotics and Automation, IEEE, pp.
+2209–2214.Anderson, C.E., Walker, J.D., Bless, S.J. and Partom, Y.
+(1996) ‘On the L/D effect for long-rod penetrators’, International
+Journal of Impact Engineering, 18(3), pp. 247–264.BAE Systems (2015)
+‘Hypervelocity projectile’Bench-Capon, T.J.M. (2020) ‘Ethical approaches
+and autonomous systems’, Artificial Intelligence, 281, p.
+103239.Borenstein, J., Thomas, D., Sights, B., Ojeda, L., Bankole, P.
+and Fellars, D. (2010) ‘Human leader and robot follower team: correcting
+leader’s position from follower’s heading’, Unmanned Systems Technology
+XII, 7692, p. 76921E.Bradley, C. (Business consultant), Smit, S. and
+Hirt, M. (Business consultant) (2018) ‘Strategy beyond the hockey
+stick : people, probabilities, and big moves to beat the odds’, Strategy
+beyond the hockey stick : people, probabilities, and big moves to beat
+the odds / by Chris Bradley, Martin Hirt, Sven Smit, , pp. 75–90.Bundy,
+M. (2001) ‘Aerodynamic jump: A short range view for long rod
+projectiles’, Shock and Vibration, 8(3–4), pp. 239–251.Capgemini (2019)
+Accelerating automotive’s AI transformation: How driving AI
+enterprise-wide can turbo-charge organizational value.Cayzac, R.,
+Carette, E. and Alziary de Roquefort, T. (2001) ‘Intermediate Ballistics
+Unsteady Sabot Separation: First Computations and Validations’, 19th
+International Symposium on Ballistics, 1(May), pp. 297–305.Chivers, M.
+(2019) Differential GPS Explained., Esri Available at:
+https://www.esri.com/news/arcuser/0103/differential1of2.html (Accessed:
+22 January 2020).Clemons, E. and Santamaria, J. (2002) Maneuver
+Warfare: Can Modern Military Strategy Lead You to Victory?., Harvard
+Business Review Available at:
+https://hbr.org/2002/04/maneuver-warfare-can-modern-military-strategy-lead-you-to-victory
+(Accessed: 18 November 2019).Colone, F., Cardinali, R. and Lombardo, P.
+(2006) ‘Cancellation of clutter and multipath in passive radar using a
+sequential approach’, IEEE National Radar Conference - Proceedings,
+(May), pp. 393–399.Cowper, M. and Pannell, C. (2011) Tank Spotters
+Guide.Daneshjou, K. and Shahravi, M. (2008) ‘Penetrator strength effect
+in long-rod critical ricochet angle’, Journal of Mechanical Science and
+Technology, 22(11), pp. 2076–2089.Davison, N. (2018) ‘Autonomous Weapon
+Systems: An Ethical Basis for Human Control?’, Humanitarian Law & Policy
+Blog of the ICRC, (April)Eremenko, K. and de Ponteves, H. (2020a)
+Machine Learning A to Z Course: Section 4, Simple Linear Regression.,
+Udemy Available at: https://www.udemy.com/course/machinelearning/
+(Accessed: 27 February 2020).Eremenko, K. and de Ponteves, H. (2020b)
+Machine Learning A to Z Course: Section 5, Polynomial Regression.,
+UdemyEzuma, M., Ozdemir, O., Anjinappa, C.K., Gulzar, W.A. and Guvenc,
+I. (2019) ‘Micro-UAV detection with a low-grazing angle millimeter wave
+radar’, IEEE Radio and Wireless Symposium, RWS, IEEE, pp. 1–4.FLIR
+Systems (2020) FLIR LVSS Lightweight Vehicle Surveillance System .
+Available at: https://www.flir.co.uk/products/lvss/ (Accessed: 24 June
+2020).Fortin, J., Bédard, J. and Valcartier, D. (2007) Defensive aids
+suite for light armoured vehicles Closure report (12rd) Defence R&D
+Canada-Valcartier.Gee, D.J. and Littlefield, D.L. (2001) YAW IMPACT OF
+ROD PROJECTILES.General Dynamics Mission Systems (2020) High-Speed
+Two-Axis Gimbal. Available at:
+https://gdmissionsystems.com/products/imaging/optical-systems/scanning-pointing/high-speed-two-axis-gimbal
+(Accessed: 6 March 2020).General Dynamics OTS (2011) ‘Iron Fist Active
+Protection System (APS)’Global Security (2019) Kornet (AT-14)., Global
+Security Available at:
+https://www.globalsecurity.org/military/world/russia/at-14.htm
+(Accessed: 14 October 2019).Golovachev, Y., Etinger, A., Pinhasi, G.A.
+and Pinhasi, Y. (2018) ‘Millimeter wave high resolution radar accuracy
+in fog conditions—theory and experimental verification’, Sensors
+(Switzerland), 18(7)Gu, Y. and Zhang, W. (2011) ‘QR code recognition
+based on image processing’, 2011 International Conference on Information
+Science and Technology, ICIST 2011, IEEE, pp. 733–736.Gupta, D. (2017)
+Introduction to Conditional Probability and Bayes theorem in R for data
+science professionals., Analytics VidhyaHadi, R.A., Sulong, G. and
+George, L.E. (2014) ‘VEHICLE DETECTION AND TRACKING TECHNIQUES: A
+CONCISE REVIEW’, 5(1), pp. 1–12.Hazell, P. (2016) Armour.Hazell, P.J.,
+Cowie, A., Kister, G., Stennett, C. and Cooper, G.A. (2009) ‘Penetration
+of a woven CFRP laminate by a high velocity steel sphere impacting at
+velocities of up to 1875 m/s’, International Journal of Impact
+Engineering, 36(9) Elsevier Ltd, pp. 1136–1142.Heine, A., Wickert, M.
+and Thoma, K. (2013) ‘Future vehicle protection-technologies for
+ultra-fast close-distance active protection systems’, Proceedings - 27th
+International Symposium on Ballistics, BALLISTICS 2013., Vol.2, pp.
+1030–1039.Herwig, C.B. and Schalkoff, R.J. (2015) ‘Morphological Image
+Processing Using Artificial Neural Networks’, Control and Dynamic
+Systems, 67(October 2015)Houliotis, K., Oikonomidis, P., Charchalakis,
+P. and Stipidis, E. (2018) ‘Mission-Critical Systems Design Framework’,
+Advances in Science, Technology and Engineering Systems Journal, 3(2)
+ASTES Journal, pp. 128–137.House Of Lords (2018) ‘AI in the U.K.: ready,
+willing, and able.’, 4(1–2), pp. 26–28.Huang, Z.G., Wessam, M.E. and
+Chen, Z.H. (2014) ‘Numerical investigation of the three-dimensional
+dynamic process of sabot discard’, Journal of Mechanical Science and
+Technology, 28(7), pp. 2637–2649.International Organisation for
+Standardisation (2010) ‘ISO-286, code system for tolerances on linear
+sizes’, ISOJane’s (2019) Challenger 2., IHS Markit Available at:
+https://janes.ihs.com/Janes/Display/jaa_0075-jafv (Accessed: 18 November
+2019).Jane’s Defence (2019a) Javelin Weapon System., IHS Markit
+Available at: https://janes.ihs.com/Janes/Display/jiw_0808-jiw_
+(Accessed: 9 October 2019).Jane’s Defence (2020) Land Warfare Platforms:
+Armoured Fighting Vehicles - Challenger 2. Available at:
+https://janes.ihs.com/Janes/Display/JAA_0075-JAFV (Accessed: 9 May
+2020).Jane’s Defence (2019b) ‘Russian 125mm APFSDS Ammunition’, IHS
+MarkitJane’s Defence (2019c) ‘Nexter 120mm Ammunition’, IHS MarkitJane’s
+Defence (2019d) ‘Rheinmetal Ammunition’, IHS MarkitJane’s Defence
+(2019e) ‘Abrams APFSDS Ammunition’, IHS MarkitJane’s Defence (2019f)
+‘L30 Charm Ammunition’, IHS MarkitJane’s Defence (2019g) ‘Norinco APFSDS
+125mm’, IHS Markit2Jane’s Defence (2019h) Active Defence System., IHS
+MarkitJane’s Defence (2019i) ‘Iron Fist Family of Active Protection’,
+IHS MarkitJane’s Defence (2019j) Arena Family of Active Protection
+Systems., IHS Markit Available at:
+https://janes.ihs.com/Janes/Display/jlwu0063-jlwu (Accessed: 19 December
+2019).Johnson, W., Sengupta, A.K. and Ghosh, S.K. (1982) ‘High velocity
+oblique impact and ricochet mainly of long rod projectiles: An
+overview’, International Journal of Mechanical Sciences, 24(7), pp.
+425–436.Karthik, A.K. and Blum, R.S. (2018) ‘Improved Detection
+Performance for Passive Radars Exploiting Known Communication Signal
+Form’, IEEE Signal Processing Letters, 25(11), pp. 1625–1629.Keller, J.
+(2018) ‘DRS Land Systems for active protection aboard M1A2 Abrams main
+battle tanks’, Military & Aerospace EngineeringKhan Academy (2020) Ball
+hits rod angular momentum example (video) . Available at:
+https://www.khanacademy.org/science/physics/torque-angular-momentum/torque-tutorial/v/ball-hits-rod-angular-momentum-example
+(Accessed: 14 July 2020).Khan, I. (2017) ‘Study of Internal & External
+Ballistics for . 177 cal & . 22 cal Projectiles’, (January 2017)Kim, A.
+and Golnaraghi, M.F. (2004) ‘Initial calibration of an inertial
+measurement unit using an optical position tracking system’, Record -
+IEEE PLANS, Position Location and Navigation Symposium, , pp.
+96–101.Kim, G. and Park, Y. (2016) ‘LIDAR pulse coding for high
+resolution range imaging at improved refresh rate’, Optics Express,
+24(21), p. 23810.Liden, E. (2010) ‘Interaction between high-velocity
+penertrators and moving armor components’, , pp. 1–66.Lidén, E. and
+Helte, A. (2016) ‘The break-up tendency of long rod projectiles’,
+Defence Technology, 12(2) China Ordnance Society, pp. 177–187.Liden, E.,
+Helte, A. and Andersson, O. (2016) ‘The Break-Up Tendancy of Long Rod
+Projectiles’, Iternational Symposium on Ballistics.Limnaios, G.,
+Oikonomou, D., Nomikos, P. and Zikidis, K.C. (2019) ‘Passive Radars and
+their use in the Modern Battlefield’, Journal of Computations &
+Modelling, 9(2), pp. 1792–8850.Lumang, M. (2020) ‘LONG-RANGE
+SURVEILLANCE CAMERAS and JOHNSON’S CRITERIA’Manning, C. and Simner, D.
+(Supervisor) (2009) ‘Vehicle Weight Trade-Off Study’, (July)Mao, W.,
+Zhang, Z., Qiu, L., He, J., Cui, Y. and Yun, A.S. (2017) ‘Indoor follow
+me drone’, MobiSys 2017 - Proceedings of the 15th Annual International
+Conference on Mobile Systems, Applications, and Services. Association
+for Computing Machinery, Inc, pp. 345–358.Maundril, B. (2019) AUSA 2019:
+Textron and BAE Systems go head to head with Robotic Combat Vehicle
+concepts - UV - Unmanned Vehicles - Shephard Media., Shephard Media
+Available at:
+https://www.shephardmedia.com/news/uv-online/ausa-2019-textron-and-bae-systems-go-head-head-rob/
+(Accessed: 23 October 2019).MBDA (2018) 5th Generation ATGM.MBDA Missile
+Systems (2018) ‘MMP. 5th generation land combat missile system’, , p.
+2.Meyer, T. (1998a) ‘Why Develop Active Protective Systems (APS)?’,
+(June), pp. 1–11.Meyer, T. (1998b) Why Develop Active Protective Systems
+(APS)?.Miyoshi, H., Ohba, H., Kitamura, H., Inoue, T. and Hiroe, T.
+(2005) Improvement of penetration performance of linear shaped
+charges.Mizokami, K. (2018) Russian Vehicle Demonstrates New ‘Double
+Tap’ Anti-Tank Technique., Popular Mechanics Available at:
+https://www.popularmechanics.com/military/weapons/a22813930/watch-this-russian-vehicle-double-tap-a-target-with-anti-tank-missiles/
+(Accessed: 17 October 2019).MOD (2011) ‘The Armoured Squadron’,
+1(70590)Mulligan, P.R. (2011) ‘The effects select physical parameters
+have on an explosively formed projectile’ s performance’Naudé, W. and
+Dimitri, N. (2019) ‘The race for an artificial general intelligence:
+implications for public policy’, AI and Society, Springer LondonNoorman,
+M. and Johnson, D.G. (2014) ‘Negotiating autonomy and responsibility in
+military robots’, Ethics and Information Technology, 16(1), pp.
+51–62.Olsen, W. (1994) ‘Military Operations Research Analyst’s
+Handbook’, Military Operations Research Society, 1Owen, W. (2020) War
+Without Tanks ., RUSI Available at:
+https://rusi.org/publication/rusi-newsbrief/war-without-tanks (Accessed:
+17 July 2020).Paik, S.H., Kim, S.J., Yoo, Y.H. and Lee, M. (2007)
+‘Protection performance of dual flying oblique plates against a yawed
+long-rod penetrator’, International Journal of Impact Engineering,
+34(8), pp. 1413–1422.Paliotta, C., Belleter, D.J.W. and Pettersen, K.Y.
+(2015) ‘Adaptive Source Seeking with Leader-Follower Formation
+Control∗∗This work was supported by the Research Council of Norway
+through the Centres of Excellence funding scheme, Project numbe 223254 -
+AMOS.’, IFAC-PapersOnLine, 48(16), pp. 285–290.Pang, L., Cao, Z., Yu,
+J., Liang, S., Chen, X. and Zhang, W. (2019) ‘An efficient 3D pedestrian
+detector with calibrated RGB camera and 3D LiDAR’, IEEE International
+Conference on Robotics and Biomimetics, ROBIO 2019, (December), pp.
+2902–2907.Papadakis, P. (2013) ‘Terrain traversability analysis methods
+for unmanned ground vehicles: A survey’, Engineering Applications of
+Artificial Intelligence, 26(4) Elsevier, pp. 1373–1385.Petman, J. (2017)
+‘AUTONOMOUS WEAPONS SYSTEMS AND INTERNATIONAL HUMANITARIAN LAW: “OUT OF
+THE LOOP”?’, Poonawala, H.A., Satici, A.C. and Spong, M.W. (2013)
+‘Leader-follower formation control of nonholonomic wheeled mobile robots
+using only position measurements’, 2013 9th Asian Control Conference,
+ASCC 2013, IEEE, pp. 1–6.Rahman, A.H., Shaik, A.M., Kumar, J.R.,
+Balaguru, V. and Sivakumar, P. (2017) ‘Design configuration of a
+generation next main battle tank for future combat’, Defence Science
+Journal, 67(4), pp. 343–353.Rheinmetall Defence (2019) Active Defense
+System.Rocco, D. (2018) Hard Kill Countermeasure requirements for
+Kinetic Energy threat defeat – Practical study. Cranfield
+Universitr.Ryan, M. (2019) Extending the intellectual edge with
+artificial intelligence.de Saint Laurent, C. (2018) ‘In defence of
+machine learning: Debunking the myths of artificial intelligence’,
+Europe’s Journal of Psychology, 14(4), pp. 734–747.Schwab, K. (2016)
+‘Fourth Industrial Revolution’, in Penguin, pp. 181–213.Sharma-Panda,
+S., Gite, L.K., Anandaraj, A., Deodhar, R.S., Joshi, D.K. and Rajan,
+K.M. (2017) ‘Dispersion sensitivity analysis & consistency improvement
+of APFSDS’, Defence Technology, 13(4) Elsevier Ltd, pp.
+316–322.ShootersCalculator (2020) ShootersCalculator.com. Available at:
+http://www.shooterscalculator.com/ (Accessed: 13 April
+2020).Shoykhetbrod, A., Hommes, A. and Pohl, N. (2014) ‘A scanning
+FMCW-radar system for the detection of fast moving objects’, 2014
+International Radar Conference, Radar 2014, (April 2016), pp.
+0–5.Sparrow, R. (2007) ‘Killer robots’, Journal of Applied Philosophy,
+24(1) John Wiley & Sons, Ltd (10.1111), pp. 62–77. Available at:
+10.1111/j.1468-5930.2007.00346.x (Accessed: 17 October 2019).Steven, B.
+and Watt, R.R. (2010) ‘Action, Reaction, Counteraction’, Command - On
+Leadership, , pp. 46–48.Teal Group (2019) World Missiles & UAVs Briefing
+NT Spike.UK Government (2014) Guidance on Technology Readiness Levels.,
+GOV.UK Available at:
+https://www.gov.uk/government/news/guidance-on-technology-readiness-levels
+(Accessed: 9 May 2020).Ullah, I., Song, T.L. and Kirubarajan, T. (2015)
+‘Active vehicle protection using angle and time-to-go information from
+high-resolution infrared sensors’, Optical Engineering, 54(5) SPIE-Intl
+Soc Optical Eng, p. 053110.Vaitheeswaran, S., Bharath, M. and Gokul, M.
+(2014) ‘Leader Follower Formation Control of Ground Vehicles Using
+Camshift Based Guidance’, The International journal of Multimedia & Its
+Applications, 6(6), pp. 21–33.Verma, R., Nomula, A.P. and Bendre, V.S.
+(2017) ‘Study of the hypervelocity projectile launchers’, Proceedings -
+2nd International Conference on Computing, Communication, Control and
+Automation, ICCUBEA 2016, IEEE, pp. 1–5.Vu, L. and Lidar, S.S. (2020)
+‘Leddar ^(TM) Vu8 8’Ward, E. (2018) Models Supporting Trajectory
+Planning in Autonomous Vehicles.Watling, J. and Bronk, J. (2019) Strike
+From Concept to Force.Wisniewski, A. and Podgorzak, P. (2005) RESEARCH
+RESULTS ON PRECURSOR OF THE TANDEM SHAPED CHARGE PROJECTILE MODEL.Wolff,
+C. (2020) Radar Basics - The Radar Equation., Radar Tutorial Available
+at: https://www.radartutorial.eu/01.basics/The Radar Range
+Equation.en.html (Accessed: 2 March 2020).Zaman, M.A. and Matin, M.A.
+(2012) ‘Radar cross-section formulation of a shell-shaped projectile
+using modified po analysis’, Modelling and Simulation in Engineering,
+2012Zhou, W., Wang, Z. and Zhou, C. (2016) ‘Trajectory prediction and
+correction methods without meteorological information’, Proceedings -
+29th International Symposium on Ballistics, BALLISTICS 2016, 1, pp.
+73–82.
+
+[1] Should the reader wish to read further on the subject, the following
+references are recommended: (House Of Lords, 2018), (de Saint Laurent,
+2018), (Sparrow, 2007), (Noorman and Johnson, 2014), (Davison, 2018) and
+(Bench-Capon, 2020).
+
+[2] To capture the full projectile flight the units have changed from ms
+to s.
